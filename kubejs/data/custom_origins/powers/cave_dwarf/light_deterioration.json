@@ -1,0 +1,229 @@
+{
+    "name": "Light Deterioration",
+        "description": "You receive half as much healing while under sunlight or in the Nether. Progressively gets worse the longer you stay.",
+        "badges": [{
+            "type": "origins:tooltip",
+            "sprite": "kubejs:textures/gui/badge/light_deterioration.png",
+            "text": "Has three tiers:\n- Less than 15 minutes of exposure: 50% less healing\n- Above 15 minutes of exposure: 75% less healing\n- 30 minutes of exposure: 90% less healing"
+        }],
+        "type": "origins:multiple",
+        "sunlight": {
+            "type": "origins:resource",
+            "min": 0,
+            "max": 1800,
+            "max_action": {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.fire.ambient",
+                "volume": 1.0,
+                "pitch": 0.1
+            },
+            "hud_render": {
+                "sprite_location": "kubejs:textures/gui/resource_bar.png",
+                "bar_index": 5
+            }
+        },
+        "debuff": {
+            "type": "origins:resource",
+            "min": 0,
+            "max": 15,
+            "min_action": {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.fire.extinguish",
+                "volume": 1.0,
+                "pitch": 0.7
+            },
+            "hud_render": { "should_render": false }
+        },
+        "debuff_pos_increment": {
+            "type": "origins:action_over_time",
+            "interval": 20,
+            "entity_action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_debuff",
+                "operation": "add",
+                "change": 1
+            },
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_sunlight",
+                "comparison": "==",
+                "compare_to": 1800
+            }
+        },
+        "debuff_neg_increment": {
+            "type": "origins:action_over_time",
+            "interval": 20,
+            "entity_action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_debuff",
+                "operation": "add",
+                "change": -1
+            },
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_sunlight",
+                "comparison": "<",
+                "compare_to": 1800
+            }
+        },
+        "pos_increment": {
+            "type": "origins:action_over_time",
+            "interval": 20,
+            "entity_action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_sunlight",
+                "operation": "add",
+                "change": 1
+            },
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            { "type": "origins:exposed_to_sun" },
+                            {
+                                "type": "origins:dimension",
+                                "dimension": "minecraft:overworld"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:dimension",
+                        "dimension": "minecraft:the_nether"
+                    },
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            { "type": "origins:exposed_to_sun" },
+                            {
+                                "type": "origins:dimension",
+                                "dimension": "aether:the_aether"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "neg_increment": {
+            "type": "origins:action_over_time",
+            "interval": 20,
+            "entity_action": {
+                "type": "origins:change_resource",
+                "resource": "*:*_sunlight",
+                "operation": "add",
+                "change": -1
+            },
+            "condition": {
+                "inverted": true,
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            { "type": "origins:exposed_to_sun" },
+                            {
+                                "type": "origins:dimension",
+                                "dimension": "minecraft:overworld"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "origins:dimension",
+                        "dimension": "minecraft:nether"
+                    },
+                    {
+                        "type": "origins:and",
+                        "conditions": [
+                            { "type": "origins:exposed_to_sun" },
+                            {
+                                "type": "origins:dimension",
+                                "dimension": "aether:the_aether"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "less_healing_1": {
+            "type": "origins:modify_healing",
+            "modifier": {
+                "operation": "multiply_total",
+                "value": -0.50
+            },
+            "condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:resource",
+                        "resource": "*:*_sunlight",
+                        "comparison": ">=",
+                        "compare_to": 1
+                    },
+                    {
+                        "type": "origins:resource",
+                        "resource": "*:*_sunlight",
+                        "comparison": "<",
+                        "compare_to": 900
+                    }
+                ]
+            }
+        },
+        "less_healing_2": {
+            "type": "origins:modify_healing",
+            "modifier": {
+                "operation": "multiply_total",
+                "value": -0.75
+            },
+            "condition": {
+                "type": "origins:and",
+                "conditions": [
+                    {
+                        "type": "origins:resource",
+                        "resource": "*:*_sunlight",
+                        "comparison": ">=",
+                        "compare_to": 900
+                    },
+                    {
+                        "type": "origins:resource",
+                        "resource": "*:*_sunlight",
+                        "comparison": "<",
+                        "compare_to": 1800
+                    }
+                ]
+            }
+        },
+        "less_healing_3": {
+            "type": "origins:modify_healing",
+            "modifier": {
+                "operation": "multiply_total",
+                "value": -0.90
+            },
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_debuff",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        },
+        "shader_at_max": {
+            "type": "origins:shader",
+            "shader": "minecraft:shaders/post/phosphor.json",
+            "toggleable": true,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_debuff",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        },
+        "shaking_at_max": {
+            "type": "origins:shaking",
+            "condition": {
+                "type": "origins:resource",
+                "resource": "*:*_debuff",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        }
+}

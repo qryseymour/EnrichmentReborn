@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "luphieclutteredmod:luphie_pink_log"
+    },
+    {
+      "item": "luphieclutteredmod:luphie_pink_log"
+    },
+    {
+      "item": "luphieclutteredmod:luphie_pink_log"
+    },
+    {
+      "item": "luphieclutteredmod:luphie_pink_planks"
+    },
+    {
+      "item": "luphieclutteredmod:luphie_pink_planks"
+    },
+    {
+      "item": "luphieclutteredmod:luphie_pink_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:luphie_pink_luphieclutteredmod_chair_dinner"
+  }
+}

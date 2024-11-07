@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "bloomingnature:fan_palm_planks"
+    },
+    {
+      "item": "bloomingnature:fan_palm_planks"
+    },
+    {
+      "item": "bloomingnature:stripped_fan_palm_log"
+    },
+    {
+      "item": "bloomingnature:stripped_fan_palm_log"
+    },
+    {
+      "item": "bloomingnature:stripped_fan_palm_log"
+    },
+    {
+      "item": "bloomingnature:stripped_fan_palm_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:stripped_fan_palm_bloomingnature_chair"
+  }
+}

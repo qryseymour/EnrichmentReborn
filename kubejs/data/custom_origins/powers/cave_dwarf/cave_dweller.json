@@ -1,0 +1,57 @@
+{
+    "name": "Cave Dweller",
+        "description": "You're more resillient and mine faster while underground.",
+        "badges": [{
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "Must be:\n- In the Overworld\n- Under Y': 58\n- Not in an ocean biome\n- Not exposed to the sun"
+        }],
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 45,
+        "duration_per_stack": 20,
+        "tick_rate": 20,
+        "effects": [
+            {
+                "effect": "minecraft:haste",
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+            },
+            {
+                "effect": "minecraft:resistance",
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
+            }
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:biome",
+                    "condition": {
+                        "inverted": true,
+                        "type": "origins:in_tag",
+                        "tag": "minecraft:is_ocean"
+                    }
+                },
+                {
+                    "type": "origins:dimension",
+                    "dimension": "minecraft:overworld"
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:exposed_to_sun"
+                },
+                {
+                    "type": "origins:on_block",
+                    "block_condition": {
+                        "type": "origins:height",
+                        "comparison": "<=",
+                        "compare_to": 57
+                    }
+                }
+            ]
+        }
+}

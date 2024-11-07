@@ -1,0 +1,74 @@
+# config
+/config/jei/world/
+/config/blockswap/known_states/
+/config/inventoryprofilesnext/*
+!config/inventoryprofilesnext/inventoryprofiles.json
+/config/voicechat/username-cache.json
+/config/voicechat/voicechat-volumes.properties
+/config/voicechat/voicechat-server.properties
+/config/Obscuria/Data/
+/config/indium-renderer.properties
+/config/fabric/indigo-renderer.properties
+/config/spark/activity.json
+/config/embeddium-fingerprint.json
+/config/mc2discord.toml
+/config/cpm.json
+/.vscode/probe.class-definitions.json
+/.vscode/probe.code-snippets
+/.vscode/probe.doc-schema.json
+/.vscode/probe.lang_key-definitions.json
+/.vscode/probe.lang-schema.json
+/.vscode/probe.registry-definitions.json
+/.vscode/probe*
+/kubejs/probe/
+# /kubejs/config/client.properties
+# /kubejs/config/common.properties
+
+# mods
+/mods/.connector/
+/mods/.index/
+
+# root folders
+/not-enough-crashes/
+/crash-reports/
+/screenshots/
+/saves/
+/logs/
+/debug/
+/data/
+/local/
+/patchouli_books/
+/schematics/
+/xaero/
+/XaeroWorldMap/
+/XaeroWaypoints*/
+/modernfix/
+/showdown/
+/moddata
+/showdown-backup/
+
+# root files
+/knownkeys.txt
+/options.txt
+/realms_persistence.json
+/TrashSlotSaveState.json
+/usercache.json
+/usernamecache.json
+/patchouli_data.json
+/o_prof
+/enigmatic_persistence.dat
+/reauth.toml
+/servers.dat
+/rhino.local.properties
+/seamless.txt
+/fabricloader.log
+resourcepacks/Quark Programmer Art.zip
+emi.json
+
+# launcher-related
+/.curseclient
+/icon.png
+/server-resource-packs/
+/coremods/
+/texturepacks/
+minecraftinstance.json

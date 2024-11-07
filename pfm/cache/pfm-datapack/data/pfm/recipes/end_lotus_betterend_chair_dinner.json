@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "betterend:end_lotus_log"
+    },
+    {
+      "item": "betterend:end_lotus_log"
+    },
+    {
+      "item": "betterend:end_lotus_log"
+    },
+    {
+      "item": "betterend:end_lotus_planks"
+    },
+    {
+      "item": "betterend:end_lotus_planks"
+    },
+    {
+      "item": "betterend:end_lotus_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:end_lotus_betterend_chair_dinner"
+  }
+}

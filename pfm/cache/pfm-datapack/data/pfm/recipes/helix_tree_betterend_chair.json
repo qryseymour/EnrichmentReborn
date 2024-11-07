@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "betterend:helix_tree_log"
+    },
+    {
+      "item": "betterend:helix_tree_log"
+    },
+    {
+      "item": "betterend:helix_tree_planks"
+    },
+    {
+      "item": "betterend:helix_tree_planks"
+    },
+    {
+      "item": "betterend:helix_tree_planks"
+    },
+    {
+      "item": "betterend:helix_tree_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:helix_tree_betterend_chair"
+  }
+}

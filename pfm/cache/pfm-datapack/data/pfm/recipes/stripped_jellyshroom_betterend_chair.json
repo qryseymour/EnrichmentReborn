@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "betterend:jellyshroom_planks"
+    },
+    {
+      "item": "betterend:jellyshroom_planks"
+    },
+    {
+      "item": "betterend:jellyshroom_stripped_log"
+    },
+    {
+      "item": "betterend:jellyshroom_stripped_log"
+    },
+    {
+      "item": "betterend:jellyshroom_stripped_log"
+    },
+    {
+      "item": "betterend:jellyshroom_stripped_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:stripped_jellyshroom_betterend_chair"
+  }
+}

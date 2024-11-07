@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "pfm:block/kitchen_counter_oven",
+      "uvlock": true,
+      "y": 270
+    },
+    "facing=north": {
+      "model": "pfm:block/kitchen_counter_oven",
+      "uvlock": true,
+      "y": 180
+    },
+    "facing=south": {
+      "model": "pfm:block/kitchen_counter_oven",
+      "uvlock": true,
+      "y": 0
+    },
+    "facing=west": {
+      "model": "pfm:block/kitchen_counter_oven",
+      "uvlock": true,
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "regions_unexplored:green_bioshroom_planks"
+    },
+    {
+      "item": "regions_unexplored:green_bioshroom_planks"
+    },
+    {
+      "item": "regions_unexplored:stripped_green_bioshroom_stem"
+    },
+    {
+      "item": "regions_unexplored:stripped_green_bioshroom_stem"
+    },
+    {
+      "item": "regions_unexplored:stripped_green_bioshroom_stem"
+    },
+    {
+      "item": "regions_unexplored:stripped_green_bioshroom_stem"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:stripped_green_bioshroom_regions_unexplored_chair"
+  }
+}

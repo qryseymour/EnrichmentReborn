@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "regions_unexplored:cobalt_planks"
+    },
+    {
+      "item": "regions_unexplored:cobalt_planks"
+    },
+    {
+      "item": "regions_unexplored:stripped_cobalt_log"
+    },
+    {
+      "item": "regions_unexplored:stripped_cobalt_log"
+    },
+    {
+      "item": "regions_unexplored:stripped_cobalt_log"
+    },
+    {
+      "item": "regions_unexplored:stripped_cobalt_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:stripped_cobalt_regions_unexplored_chair"
+  }
+}

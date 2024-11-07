@@ -1,0 +1,11 @@
+{
+  rules : [
+    {
+      name : 'No Evil Forlorn',
+      what : 'DISALLOW_SPAWN',
+      when : {
+        entityId : [ 'soulsweapons:evil_forlorn' ]
+      }
+    }
+  ]
+}

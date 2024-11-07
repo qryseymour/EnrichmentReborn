@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "betterend:pythadendron_planks"
+    },
+    {
+      "item": "betterend:pythadendron_planks"
+    },
+    {
+      "item": "betterend:pythadendron_stripped_log"
+    },
+    {
+      "item": "betterend:pythadendron_stripped_log"
+    },
+    {
+      "item": "betterend:pythadendron_stripped_log"
+    },
+    {
+      "item": "betterend:pythadendron_stripped_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:stripped_pythadendron_betterend_chair"
+  }
+}

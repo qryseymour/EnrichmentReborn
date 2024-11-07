@@ -1,0 +1,138 @@
+{
+    "name": "Grand Equipment",
+        "description": "All equipped armor and weapons loses 25% protection or melee damage for each met condition:\n- An equipped item is not made of a precious metal\n- An equipped item is not enchanted",
+        "type": "origins:multiple",
+        "precious_metal_armor": {
+            "type": "origins:conditioned_attribute",
+            "tick_rate": 20,
+            "modifier": {
+                "attribute": "minecraft:generic.armor",
+                "operation": "multiply_total",
+                "value": -0.25
+            },
+            "condition": {
+                "type": "origins:or",
+                "inverted": true,
+                "conditions": [
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "head",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": { "tag": "kubejs:precious_equipment" }
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "chest",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": { "tag": "kubejs:precious_equipment" }
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "legs",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": { "tag": "kubejs:precious_equipment" }
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "feet",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": { "tag": "kubejs:precious_equipment" }
+                        }
+                    }
+                ]
+            }
+        },
+        "enchanted_armor": {
+            "type": "origins:conditioned_attribute",
+            "tick_rate": 20,
+            "modifier": {
+                "attribute": "minecraft:generic.armor",
+                "operation": "multiply_total",
+                "value": -0.25
+            },
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "head",
+                        "item_condition": {
+                            "type": "origins:enchantment",
+                            "comparison": "==",
+                            "compare_to": 0
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "chest",
+                        "item_condition": {
+                            "type": "origins:enchantment",
+                            "comparison": "==",
+                            "compare_to": 0
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "legs",
+                        "item_condition": {
+                            "type": "origins:enchantment",
+                            "comparison": "==",
+                            "compare_to": 0
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "feet",
+                        "item_condition": {
+                            "type": "origins:enchantment",
+                            "comparison": "==",
+                            "compare_to": 0
+                        }
+                    }
+                ]
+            }
+        },
+        "precious_metal_weapon": {
+            "type": "origins:conditioned_attribute",
+            "tick_rate": 10,
+            "modifier": {
+                "attribute": "minecraft:generic.attack_damage",
+                "operation": "multiply_total",
+                "value": -0.25
+            },
+            "condition": {
+                "inverted": true,
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": { "tag": "kubejs:precious_equipment" }
+                }
+            }
+        },
+        "enchanted_weapon": {
+            "type": "origins:conditioned_attribute",
+            "tick_rate": 10,
+            "modifier": {
+                "attribute": "minecraft:generic.attack_damage",
+                "operation": "multiply_total",
+                "value": -0.25
+            },
+            "condition": {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:enchantment",
+                    "comparison": "==",
+                    "compare_to": 0
+                }
+            }
+        }
+}

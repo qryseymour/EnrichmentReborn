@@ -1,0 +1,24 @@
+{
+  "allowMovement": {
+    "vazkii.patchouli.client.book.gui.GuiBookLanding": true,
+    "io.wispforest.accessories.client.gui.AccessoriesScreen": true,
+    "dev.emi.emi.screen.RecipeScreen": true,
+    "net.minecraft.class_434": true,
+    "io.github.kosmx.emotes.arch.gui.screen.ingame.FastChosseScreen": true,
+    "satisfy.herbalbrews.client.gui.CauldronGui": true,
+    "net.satisfy.camping.client.screen.BackpackScreen": true,
+    "net.mehvahdjukaar.advframes.client.StatSelectScreen": true,
+    "me.fzzyhmstrs.gearifiers.screen.RerollAltarScreen": true,
+    "net.orcinus.galosphere.client.gui.CombustionTableScreen": true,
+    "gay.solonovamax.beaconsoverhaul.screen.OverhauledBeaconScreen": true,
+    "net.p3pp3rf1y.sophisticatedbackpacks.client.gui.BackpackScreen": true,
+    "com.nhoryzon.mc.farmersdelight.client.screen.CookingPotScreen": true,
+    "shetiphian.enderchests.client.gui.GuiEnderChest": true
+  },
+  "hideBackground": {
+    "vazkii.patchouli.client.book.gui.GuiBookLanding": true,
+    "vazkii.patchouli.client.book.gui.GuiBookCategory": true,
+    "io.wispforest.accessories.client.gui.AccessoriesScreen": true,
+    "dev.emi.emi.screen.RecipeScreen": true
+  }
+}

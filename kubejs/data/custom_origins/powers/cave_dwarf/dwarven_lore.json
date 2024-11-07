@@ -1,0 +1,36 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [{ "text": "Blessed by a great blacksmith." }],
+        "replace": true
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [{ "text": "It is the nature of a thing that matters. Not its form." }],
+        "replace": true,
+        "conditions": [
+            {
+                "condition": "minecraft:random_chance",
+                "chance": 0.25
+            }
+        ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+            { "text": "May this item strike true. " },
+            { "text": "May it be wielded with wisdom." },
+            { "text": "May it be put down when its job is done." }
+        ],
+        "replace": true,
+        "conditions": [
+            {
+                "condition": "minecraft:random_chance",
+                "chance": 0.25
+            }
+        ]
+    }
+]

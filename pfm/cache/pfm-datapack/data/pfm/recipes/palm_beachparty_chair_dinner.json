@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "beachparty:palm_log"
+    },
+    {
+      "item": "beachparty:palm_log"
+    },
+    {
+      "item": "beachparty:palm_log"
+    },
+    {
+      "item": "beachparty:palm_planks"
+    },
+    {
+      "item": "beachparty:palm_planks"
+    },
+    {
+      "item": "beachparty:palm_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:palm_beachparty_chair_dinner"
+  }
+}

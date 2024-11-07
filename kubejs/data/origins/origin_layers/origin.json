@@ -1,0 +1,13 @@
+{
+	"replace": false,
+	"order": 0,
+	"enabled": true,
+	"origins": [
+		"custom_origins:cave_dwarf"
+	],
+	"allow_random": true,
+	"exclude_random": [
+		"origins:human"
+	],
+	"allow_random_unchoosable": false
+}

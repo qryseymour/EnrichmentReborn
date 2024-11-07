@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "regions_unexplored:blackwood_planks"
+    },
+    {
+      "item": "regions_unexplored:blackwood_planks"
+    },
+    {
+      "item": "regions_unexplored:blackwood_planks"
+    },
+    {
+      "item": "regions_unexplored:stripped_blackwood_log"
+    },
+    {
+      "item": "regions_unexplored:stripped_blackwood_log"
+    },
+    {
+      "item": "regions_unexplored:stripped_blackwood_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:stripped_blackwood_regions_unexplored_chair_dinner"
+  }
+}

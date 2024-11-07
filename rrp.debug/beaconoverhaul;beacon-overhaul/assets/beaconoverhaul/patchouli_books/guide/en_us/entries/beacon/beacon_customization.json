@@ -1,0 +1,19 @@
+{
+    "name": "Beacon Customization",
+    "category": "beaconoverhaul:beacon",
+    "icon": "minecraft:purple_stained_glass",
+    "pages": [
+        {
+            "type": "patchouli:spotlight",
+            "item": "tag:c:glass_blocks",
+            "title": "Colour",
+            "text": "You can change the colour of a beacon by placing a piece of stained glass in front of it."
+        },
+        {
+            "type": "patchouli:spotlight",
+            "item": "minecraft:amethyst_cluster",
+            "title": "Redirection",
+            "text": "Beacon beams can be redirected using Amethyst Clusters!$(br)$(br)Simply place a cluster in the path of the beam, and the beam will be redirected in the direction of the cluster."
+        }
+    ]
+}

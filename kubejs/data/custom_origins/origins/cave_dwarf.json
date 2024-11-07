@@ -1,0 +1,17 @@
+{
+    "name": "Cave Dwarf",
+    "description": "An engineer of age; a tinkerer of grandiose; a smith of greatness: A Cave Dwarf. Made exclusively for mo_mo.",
+    "icon": "create:cogwheel",
+    "powers": [
+        "custom_origins:cave_dwarf/darkvision",
+        "custom_origins:cave_dwarf/darkvision_less_colour",
+        "custom_origins:cave_dwarf/cave_dweller",
+        "custom_origins:cave_dwarf/short_legged",
+        "custom_origins:cave_dwarf/poison_resistance",
+        "custom_origins:cave_dwarf/dwarven_smithing",
+        "custom_origins:cave_dwarf/fear_of_the_deep",
+        "custom_origins:cave_dwarf/light_deterioration",
+        "custom_origins:cave_dwarf/grand_equipment"
+    ],
+    "impact": 3
+}

@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "iceandfire:dreadwood_log"
+    },
+    {
+      "item": "iceandfire:dreadwood_log"
+    },
+    {
+      "item": "iceandfire:dreadwood_log"
+    },
+    {
+      "item": "iceandfire:dreadwood_planks"
+    },
+    {
+      "item": "iceandfire:dreadwood_planks"
+    },
+    {
+      "item": "iceandfire:dreadwood_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:dreadwood_iceandfire_chair_dinner"
+  }
+}

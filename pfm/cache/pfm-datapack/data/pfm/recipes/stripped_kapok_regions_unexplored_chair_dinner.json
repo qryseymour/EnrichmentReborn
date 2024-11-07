@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "regions_unexplored:kapok_planks"
+    },
+    {
+      "item": "regions_unexplored:kapok_planks"
+    },
+    {
+      "item": "regions_unexplored:kapok_planks"
+    },
+    {
+      "item": "regions_unexplored:stripped_kapok_log"
+    },
+    {
+      "item": "regions_unexplored:stripped_kapok_log"
+    },
+    {
+      "item": "regions_unexplored:stripped_kapok_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:stripped_kapok_regions_unexplored_chair_dinner"
+  }
+}

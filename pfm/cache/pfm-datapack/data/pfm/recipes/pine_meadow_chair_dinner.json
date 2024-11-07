@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "meadow:pine_log"
+    },
+    {
+      "item": "meadow:pine_log"
+    },
+    {
+      "item": "meadow:pine_log"
+    },
+    {
+      "item": "meadow:pine_planks"
+    },
+    {
+      "item": "meadow:pine_planks"
+    },
+    {
+      "item": "meadow:pine_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:pine_meadow_chair_dinner"
+  }
+}

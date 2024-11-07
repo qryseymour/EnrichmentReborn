@@ -1,0 +1,9 @@
+// To generate missing and modded biomes in this list; create a new world once,
+// Any biome listed below without an ! at the start will be randomly chosen to spawn in,
+#bloomingnature:plains
+#bloomingnature:sunflower_plains
+#c:plains
+#minecraft:has_structure/village_plains
+#bloomingnature:flower_forest
+#c:flower_forests
+#farm_and_charm:spawns_wild_flowers

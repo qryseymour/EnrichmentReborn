@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "regions_unexplored:magnolia_planks"
+    },
+    {
+      "item": "regions_unexplored:magnolia_planks"
+    },
+    {
+      "item": "regions_unexplored:stripped_magnolia_log"
+    },
+    {
+      "item": "regions_unexplored:stripped_magnolia_log"
+    },
+    {
+      "item": "regions_unexplored:stripped_magnolia_log"
+    },
+    {
+      "item": "regions_unexplored:stripped_magnolia_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:stripped_magnolia_regions_unexplored_chair"
+  }
+}

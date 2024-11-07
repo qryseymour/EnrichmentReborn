@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "regions_unexplored:eucalyptus_planks"
+    },
+    {
+      "item": "regions_unexplored:eucalyptus_planks"
+    },
+    {
+      "item": "regions_unexplored:eucalyptus_planks"
+    },
+    {
+      "item": "regions_unexplored:stripped_eucalyptus_log"
+    },
+    {
+      "item": "regions_unexplored:stripped_eucalyptus_log"
+    },
+    {
+      "item": "regions_unexplored:stripped_eucalyptus_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:stripped_eucalyptus_regions_unexplored_chair_dinner"
+  }
+}

@@ -1,0 +1,3 @@
+Opening loading screen
+Preparing loading screen for entrypoint 'preLaunch'
+Calling entrypoint container for mod 'advanced_runtime_resource_pack'

@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "regions_unexplored:joshua_planks"
+    },
+    {
+      "item": "regions_unexplored:joshua_planks"
+    },
+    {
+      "item": "regions_unexplored:stripped_joshua_log"
+    },
+    {
+      "item": "regions_unexplored:stripped_joshua_log"
+    },
+    {
+      "item": "regions_unexplored:stripped_joshua_log"
+    },
+    {
+      "item": "regions_unexplored:stripped_joshua_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:stripped_joshua_regions_unexplored_chair"
+  }
+}

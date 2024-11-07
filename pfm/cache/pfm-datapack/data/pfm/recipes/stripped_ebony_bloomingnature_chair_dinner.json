@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "bloomingnature:ebony_planks"
+    },
+    {
+      "item": "bloomingnature:ebony_planks"
+    },
+    {
+      "item": "bloomingnature:ebony_planks"
+    },
+    {
+      "item": "bloomingnature:stripped_ebony_log"
+    },
+    {
+      "item": "bloomingnature:stripped_ebony_log"
+    },
+    {
+      "item": "bloomingnature:stripped_ebony_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:stripped_ebony_bloomingnature_chair_dinner"
+  }
+}

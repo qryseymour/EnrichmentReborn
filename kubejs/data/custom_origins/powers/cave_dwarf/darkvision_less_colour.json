@@ -1,0 +1,10 @@
+{
+    "type": "origins:shader",
+    "shader": "minecraft:shaders/post/desaturate.json",
+    "hidden": true,
+    "toggleable": true,
+    "condition": {
+        "type": "origins:power_active",
+        "power": "custom_origins:cave_dwarf/darkvision"
+    }
+}

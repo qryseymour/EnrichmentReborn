@@ -1,0 +1,47 @@
+{
+    "name": "Fear of the Deep",
+        "description": "You refuse to ride a boat.",
+        "badges": [{
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "Depth Strider will restore your confidence."
+        }],
+        "type": "origins:prevent_entity_use",
+        "bientity_action": {
+            "type": "origins:actor_action",
+            "action": {
+                "type": "origins:execute_command",
+                "command": "title @s actionbar {'text': 'You have a fear of the deep!'}"
+            }
+        },
+        "bientity_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:boat"
+                    }
+                },
+                {
+                    "type": "origins:target_condition",
+                    "condition": {
+                        "type": "origins:entity_type",
+                        "entity_type": "minecraft:chest_boat"
+                    }
+                },
+                {
+                    "type": "origins:actor_condition",
+                    "condition": {
+                        "inverted": true,
+                        "type": "origins:enchantment",
+                        "enchantment": "minecraft:depth_strider",
+                        "calculation": "sum",
+                        "comparison": ">",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+}

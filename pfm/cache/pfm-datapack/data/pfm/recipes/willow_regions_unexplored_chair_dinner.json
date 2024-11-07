@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "regions_unexplored:willow_log"
+    },
+    {
+      "item": "regions_unexplored:willow_log"
+    },
+    {
+      "item": "regions_unexplored:willow_log"
+    },
+    {
+      "item": "regions_unexplored:willow_planks"
+    },
+    {
+      "item": "regions_unexplored:willow_planks"
+    },
+    {
+      "item": "regions_unexplored:willow_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:willow_regions_unexplored_chair_dinner"
+  }
+}

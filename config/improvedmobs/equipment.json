@@ -1,0 +1,412 @@
+{
+  "__comment": [
+    "Mobs will be able to equip items declared here",
+    "The first number is the weight while the second number is the quality",
+    "Weight is the weight of an item. Higher weight means that the item is more likely to get choosen",
+    "Quality is a modifier applied to the weight. The final weight used is weight + quality * current difficulty"
+  ],
+  "MAINHAND": {
+    "minecraft:bow": [
+      12595,
+      4.508568
+    ],
+    "minecraft:crossbow": [
+      12889,
+      3.826627
+    ],
+    "minecraft:iron_axe": [
+      14586,
+      0.51635593
+    ],
+    "minecraft:iron_shovel": [
+      14586,
+      0.51635593
+    ],
+    "minecraft:iron_pickaxe": [
+      14586,
+      0.51635593
+    ],
+    "minecraft:lingering_potion{Potion:\"minecraft:harming\"}": [
+      13663,
+      1.7269388
+    ],
+    "minecraft:snowball": [
+      14613,
+      0.46844563
+    ],
+    "minecraft:splash_potion{Potion:\"minecraft:harming\"}": [
+      13663,
+      1.7269388
+    ],
+    "minecraft:tnt": [
+      13463,
+      1.9881918
+    ],
+    "minecraft:trident": [
+      12663,
+      4.357304
+    ]
+  },
+  "OFFHAND": {
+    "minecraft:ender_pearl": [
+      675,
+      1.2102311
+    ],
+    "minecraft:flint_and_steel": [
+      647,
+      1.2461817
+    ],
+    "minecraft:lava_bucket": [
+      275,
+      1.7269388
+    ],
+    "minecraft:shield": [
+      353,
+      1.6255897
+    ],
+    "minecraft:bow": [
+      12595,
+      4.508568
+    ],
+    "minecraft:crossbow": [
+      12889,
+      3.826627
+    ],
+    "minecraft:iron_axe": [
+      14586,
+      0.51635593
+    ],
+    "minecraft:lingering_potion{Potion:\"minecraft:harming\"}": [
+      13663,
+      1.7269388
+    ],
+    "minecraft:snowball": [
+      14613,
+      0.46844563
+    ],
+    "minecraft:splash_potion{Potion:\"minecraft:harming\"}": [
+      13663,
+      1.7269388
+    ],
+    "minecraft:tnt": [
+      13463,
+      1.9881918
+    ],
+    "minecraft:trident": [
+      12663,
+      4.357304
+    ]
+  },
+  "FEET": {
+    "immersive_armors:bone_boots": [
+      5715,
+      0.0327
+    ],
+    "immersive_armors:divine_boots": [
+      4470,
+      1.8207614
+    ],
+    "immersive_armors:heavy_boots": [
+      4170,
+      2.2144253
+    ],
+    "immersive_armors:prismarine_boots": [
+      4276,
+      2.074836
+    ],
+    "immersive_armors:robe_boots": [
+      5438,
+      0.5586735
+    ],
+    "immersive_armors:slime_boots": [
+      4947,
+      1.2038136
+    ],
+    "immersive_armors:steampunk_boots": [
+      5168,
+      0.9202718
+    ],
+    "immersive_armors:warrior_boots": [
+      5012,
+      1.1204389
+    ],
+    "immersive_armors:wither_boots": [
+      5474,
+      0.5012417
+    ],
+    "immersive_armors:wooden_boots": [
+      5770,
+      0.0272
+    ],
+    "mythicupgrades:ametrine_boots": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:aquamarine_boots": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:jade_boots": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:peridot_boots": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:ruby_boots": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:sapphire_boots": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:topaz_boots": [
+      3148,
+      5.212185
+    ]
+  },
+  "LEGS": {
+    "immersive_armors:bone_leggings": [
+      5715,
+      0.0327
+    ],
+    "immersive_armors:divine_leggings": [
+      4470,
+      1.8207614
+    ],
+    "immersive_armors:heavy_leggings": [
+      4170,
+      2.2144253
+    ],
+    "immersive_armors:prismarine_leggings": [
+      4276,
+      2.074836
+    ],
+    "immersive_armors:robe_leggings": [
+      5438,
+      0.5586735
+    ],
+    "immersive_armors:slime_leggings": [
+      4947,
+      1.2038136
+    ],
+    "immersive_armors:steampunk_leggings": [
+      5168,
+      0.9202718
+    ],
+    "immersive_armors:warrior_leggings": [
+      5012,
+      1.1204389
+    ],
+    "immersive_armors:wither_leggings": [
+      5474,
+      0.5012417
+    ],
+    "immersive_armors:wooden_leggings": [
+      5770,
+      0.0272
+    ],
+    "majruszsdifficulty:enderium_leggings": [
+      3611,
+      4.200942
+    ],
+    "majruszsdifficulty:tattered_leggings": [
+      5736,
+      0.030599998
+    ],
+    "mythicupgrades:ametrine_leggings": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:aquamarine_leggings": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:jade_leggings": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:peridot_leggings": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:ruby_leggings": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:sapphire_leggings": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:topaz_leggings": [
+      3148,
+      5.212185
+    ]
+  },
+  "CHEST": {
+    "immersive_armors:bone_chestplate": [
+      5715,
+      0.0327
+    ],
+    "immersive_armors:divine_chestplate": [
+      4470,
+      1.8207614
+    ],
+    "immersive_armors:heavy_chestplate": [
+      4170,
+      2.2144253
+    ],
+    "immersive_armors:prismarine_chestplate": [
+      4276,
+      2.074836
+    ],
+    "immersive_armors:robe_chestplate": [
+      5438,
+      0.5586735
+    ],
+    "immersive_armors:slime_chestplate": [
+      4947,
+      1.2038136
+    ],
+    "immersive_armors:steampunk_chestplate": [
+      5168,
+      0.9202718
+    ],
+    "immersive_armors:warrior_chestplate": [
+      5012,
+      1.1204389
+    ],
+    "immersive_armors:wither_chestplate": [
+      5474,
+      0.5012417
+    ],
+    "immersive_armors:wooden_chestplate": [
+      5770,
+      0.0272
+    ],
+    "mythicupgrades:ametrine_chestplate": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:aquamarine_chestplate": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:jade_chestplate": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:peridot_chestplate": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:ruby_chestplate": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:sapphire_chestplate": [
+      3887,
+      3.5036063
+    ],
+    "mythicupgrades:topaz_chestplate": [
+      3148,
+      5.212185
+    ]
+  },
+  "HEAD": {
+    "dungeonnowloading:spawner_helmet": [
+      4199,
+      2.1445646
+    ],
+    "friendsandfoes:wildfire_crown": [
+      4875,
+      1.2654512
+    ],
+    "immersive_armors:bone_helmet": [
+      5691,
+      0.0327
+    ],
+    "immersive_armors:divine_helmet": [
+      4446,
+      1.8207614
+    ],
+    "immersive_armors:heavy_helmet": [
+      4146,
+      2.2144253
+    ],
+    "immersive_armors:prismarine_helmet": [
+      4252,
+      2.074836
+    ],
+    "immersive_armors:robe_helmet": [
+      5414,
+      0.5586735
+    ],
+    "immersive_armors:slime_helmet": [
+      4923,
+      1.2038136
+    ],
+    "immersive_armors:steampunk_helmet": [
+      5144,
+      0.9202718
+    ],
+    "immersive_armors:warrior_helmet": [
+      4988,
+      1.1204389
+    ],
+    "immersive_armors:wither_helmet": [
+      5450,
+      0.5012417
+    ],
+    "immersive_armors:wooden_helmet": [
+      5746,
+      0.0272
+    ],
+    "minecraft:golden_helmet": [
+      5492,
+      0.4136078
+    ],
+    "minecraft:turtle_helmet": [
+      5122,
+      0.948558
+    ],
+    "mininghelmet:mining_helmet": [
+      4968,
+      1.1460843
+    ],
+    "mythicupgrades:ametrine_helmet": [
+      3863,
+      3.5036063
+    ],
+    "mythicupgrades:aquamarine_helmet": [
+      3863,
+      3.5036063
+    ],
+    "mythicupgrades:jade_helmet": [
+      3863,
+      3.5036063
+    ],
+    "mythicupgrades:peridot_helmet": [
+      3863,
+      3.5036063
+    ],
+    "mythicupgrades:ruby_helmet": [
+      3863,
+      3.5036063
+    ],
+    "mythicupgrades:sapphire_helmet": [
+      3863,
+      3.5036063
+    ],
+    "mythicupgrades:topaz_helmet": [
+      3124,
+      5.212185
+    ],
+    "whisperwoods:hirschgeist_skull": [
+      4968,
+      1.1460843
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "bloomingnature:aspen_planks"
+    },
+    {
+      "item": "bloomingnature:aspen_planks"
+    },
+    {
+      "item": "bloomingnature:stripped_aspen_log"
+    },
+    {
+      "item": "bloomingnature:stripped_aspen_log"
+    },
+    {
+      "item": "bloomingnature:stripped_aspen_log"
+    },
+    {
+      "item": "bloomingnature:stripped_aspen_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:stripped_aspen_bloomingnature_chair"
+  }
+}

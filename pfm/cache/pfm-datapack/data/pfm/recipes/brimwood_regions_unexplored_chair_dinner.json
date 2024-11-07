@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "regions_unexplored:brimwood_log"
+    },
+    {
+      "item": "regions_unexplored:brimwood_log"
+    },
+    {
+      "item": "regions_unexplored:brimwood_log"
+    },
+    {
+      "item": "regions_unexplored:brimwood_planks"
+    },
+    {
+      "item": "regions_unexplored:brimwood_planks"
+    },
+    {
+      "item": "regions_unexplored:brimwood_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:brimwood_regions_unexplored_chair_dinner"
+  }
+}

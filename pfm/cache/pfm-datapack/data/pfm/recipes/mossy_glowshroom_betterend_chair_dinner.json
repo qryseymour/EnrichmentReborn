@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "betterend:mossy_glowshroom_log"
+    },
+    {
+      "item": "betterend:mossy_glowshroom_log"
+    },
+    {
+      "item": "betterend:mossy_glowshroom_log"
+    },
+    {
+      "item": "betterend:mossy_glowshroom_planks"
+    },
+    {
+      "item": "betterend:mossy_glowshroom_planks"
+    },
+    {
+      "item": "betterend:mossy_glowshroom_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:mossy_glowshroom_betterend_chair_dinner"
+  }
+}

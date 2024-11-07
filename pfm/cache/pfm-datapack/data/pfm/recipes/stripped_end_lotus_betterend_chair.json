@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "betterend:end_lotus_planks"
+    },
+    {
+      "item": "betterend:end_lotus_planks"
+    },
+    {
+      "item": "betterend:end_lotus_stripped_log"
+    },
+    {
+      "item": "betterend:end_lotus_stripped_log"
+    },
+    {
+      "item": "betterend:end_lotus_stripped_log"
+    },
+    {
+      "item": "betterend:end_lotus_stripped_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:stripped_end_lotus_betterend_chair"
+  }
+}

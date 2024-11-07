@@ -1,0 +1,11 @@
+#Sat Oct 26 16:30:49 EDT 2024
+Colorboost=true
+Colored_Shadows=false
+Fog=false
+Reflections=false
+Shadows=false
+TransparentReflections=false
+Waving_Lanterns=false
+animationSpeed=0.5
+grass_shadows=false
+skyReflection=true

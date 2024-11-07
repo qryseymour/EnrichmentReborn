@@ -1,0 +1,28 @@
+{
+  "type": "pfm:furniture",
+  "group": "chairs",
+  "ingredients": [
+    {
+      "item": "betterend:lucernia_log"
+    },
+    {
+      "item": "betterend:lucernia_log"
+    },
+    {
+      "item": "betterend:lucernia_log"
+    },
+    {
+      "item": "betterend:lucernia_planks"
+    },
+    {
+      "item": "betterend:lucernia_planks"
+    },
+    {
+      "item": "betterend:lucernia_planks"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "pfm:lucernia_betterend_chair_dinner"
+  }
+}
