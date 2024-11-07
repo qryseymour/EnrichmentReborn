@@ -6,7 +6,8 @@ let replacements = [
     ["beautify:rope", "farmersdelight:rope"],
     ["brewery:rope", "farmersdelight:rope"],
     ["terraqueous:ender_dust", "betterend:ender_dust"],
-    ["new_soviet:sickle", "terraqueous:scythe"]
+    ["new_soviet:sickle", "terraqueous:scythe"],
+    ["yummyglass:glass_shard", "terraqueous:doodad_glassshards"]
 ]
 
 ServerEvents.recipes(e => { 
@@ -26,6 +27,7 @@ ServerEvents.recipes(e => {
         ["minecraft:potion", "projectiles:dynamite", { id: "dungeonsnowloading:explosive_barrel" }],
         ["minecraft:bone", "minecraft:goat_horn", { id: "immersive_armors:warrior_helmet" }],
         ["minecraft:iron_ingot", "minecraft:iron_block", { id: /immersive_armors:heavy_(boots|leggings|chestplate|helmet)/ }],
+        ["enva:glass_bowl", "minecraft:turtle_helmet", { id: "enva:titanium_coated_glass_bowl" }]
     ].forEach((replacing) => {
         e.replaceInput(replacing[2], replacing[0], replacing[1])
     })

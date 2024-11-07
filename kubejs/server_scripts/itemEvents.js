@@ -18,6 +18,10 @@ const applyItemlistCooldown = (player, itemList, ticks) => {
     })
 }
 
+ItemEvents.rightClicked('enva:glass_bowl', e => {
+    e.cancel();
+})
+
 ItemEvents.rightClicked('minecraft:ender_pearl', e => {
     if (e.player.inWater) {
         e.cancel();

@@ -6,6 +6,22 @@ ServerEvents.recipes(e => {
     'boots'
   ]
 
+  let toolTypes = [
+    'sword',
+    'pickaxe',
+    'axe',
+    'shovel',
+    'hoe'
+  ]
+
+  let basicWeapons = [
+    "dagger",
+    "club",
+    "spear",
+    "hammer",
+    "quarterstaff"
+  ]
+
   let fantasyArmorLink = [
     ['dragonslayer', 'minecraft:dragon_breath'],
     ['wandering_wizard', 'endrem:witch_eye'],
@@ -16,14 +32,6 @@ ServerEvents.recipes(e => {
     ['thief', 'silentsdelight:warden_heart'],
     ['chess_board_knight', 'new_soviet:white_knight'],
     ['sunset_wings', 'xtraarrows:vex_wing'],
-  ]
-
-  let toolTypes = [
-    'sword',
-    'pickaxe',
-    'axe',
-    'shovel',
-    'hoe'
   ]
 
     e.shaped(
@@ -397,6 +405,20 @@ ServerEvents.recipes(e => {
       ).id("immersive_armors:steampunk_boots")
     
       e.shaped(
+          Item.of('immersive_paintings:painting', 1),
+          [
+              'BBB',
+              'BAB',
+              'BCB'
+          ],
+          {
+              A: '#c:dyes',
+              B: 'minecraft:paper',
+              C: 'minecraft:painting'
+          }
+      ).id("immersive_paintings:painting")
+    
+      e.shaped(
         Item.of('snowballs_plus:healthy_snowball', 40), 
         [
           'AAA',
@@ -487,6 +509,25 @@ ServerEvents.recipes(e => {
           C: 'betterend:leather_wrapped_stick'
         }
       ).id("umbrellas:umbrella")
+    
+      e.shaped(
+        Item.of('projectiles:dynamite', 1), 
+        [
+          ' D ',
+          'CBC',
+          'CAC'
+        ],
+        {
+          A: '#minecraft:sand',
+          B: 'minecraft:gunpowder',
+          C: 'minecraft:paper',
+          D: 'farmersdelight:rope'
+        }
+      ).id("projectiles:dynamite")
+    
+      e.remove({ id: 'projectiles:dynamite_sand' })
+    
+      e.remove({ id: 'projectiles:dynamite_red_sand' })
       
     
     e.shapeless('minecraft:gunpowder', ['betterend:crystalline_sulphur', 'meadow:alpine_salt', '#minecraft:coals']).id('mosmods2:shapeless/gunpowder_from_sulfur')
@@ -518,6 +559,9 @@ ServerEvents.recipes(e => {
       if (tool != "hoe") {
         e.smithing(`minecraft:netherite_${tool}`, 'minecraft:black_dye', `minecraft:diamond_${tool}`, 'minecraft:netherite_ingot').id(`minecraft:netherite_${tool}_smithing`)
       }
+    })
+    basicWeapons.forEach((tool) => { 
+      e.smithing(`basicweapons:netherite_${tool}`, 'minecraft:black_dye', `basicweapons:diamond_${tool}`, 'minecraft:netherite_ingot').id(`basicweapons:netherite_${tool}_smithing`)
     })
     // chess pieces
     let monochrome = [

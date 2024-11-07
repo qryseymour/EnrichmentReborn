@@ -21,6 +21,10 @@
 /.vscode/probe.registry-definitions.json
 /.vscode/probe*
 /kubejs/probe/
+/.mixin.out/class/net/minecraft/
+/.mixin.out/class/net/minecraft/*
+/config/lambdynlights.toml
+/config/rare-ice.properties
 # /kubejs/config/client.properties
 # /kubejs/config/common.properties
 
