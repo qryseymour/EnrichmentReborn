@@ -11,7 +11,8 @@
       "origins:pumpkin_hate": true,
       "origins:extra_reach": true,
       "origins:ender_particles": true,
-      "origins:damage_from_potions": true
+      "origins:damage_from_potions": true,
+      "custom_origins:updated_water_vulnerability": true
     },
     "moborigins:witch": {
       "enabled": true,
@@ -129,7 +130,8 @@
       "origins:flame_particles": true,
       "origins:damage_from_snowballs": true,
       "origins:damage_from_potions": true,
-      "custom_origins:blazeborn/lava_swim": true
+      "custom_origins:blazeborn/lava_swim": true,
+      "custom_origins:updated_water_vulnerability": true
     },
     "moborigins:elder_guardian": {
       "enabled": true,
@@ -303,7 +305,8 @@
       "moborigins:melting": true,
       "moborigins:stronger_snowballs": true,
       "moborigins:snow_trail": true,
-      "moborigins:frigid_strength": true
+      "moborigins:frigid_strength": true,
+      "custom_origins:updated_water_vulnerability": true
     },
     "origins-classes:rogue": {
       "enabled": true,
@@ -329,7 +332,8 @@
       "moborigins:surface_slowness": true,
       "moborigins:rideable_creature": true,
       "moborigins:strider_shake": true,
-      "moborigins:warped_fungus_eater": true
+      "moborigins:warped_fungus_eater": true,
+      "custom_origins:updated_water_vulnerability": true
     }
   }
 }

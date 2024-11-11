@@ -1,7 +1,6 @@
 {
-  "dimensionX": 5,
-  "dimensionY": 5,
-  "dimensionZ": 5,
+  "dimensionWidth": 10,
+  "dimensionHeight": 10,
   "velocityRandomness": 0,
   "caveDustEnabled": false,
   "seaLevelCheck": true,

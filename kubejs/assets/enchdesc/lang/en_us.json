@@ -1,0 +1,5 @@
+{
+  "enchantment.minecraft.fire_protection.desc": "Reduces the effects of fire, freeze, earth, & plant damage. Also reduces the burn time when set on fire & increases the delay before taking damage by Hydrophobia.",
+  "enchantment.minecraft.blast_protection.desc": "Reduces internal damage done by explosions, collision during flight, sonic booms, lightning, withering, piercers, and ender pearls; alongside explosion knockback.",
+  "enchantment.minecraft.projectile_protection.desc": "Reduces damage from projectiles such as arrows and fire balls. Also grants chance to be immune to said projectiles if shot by a player."
+}

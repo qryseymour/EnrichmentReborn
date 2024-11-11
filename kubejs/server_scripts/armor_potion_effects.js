@@ -41,6 +41,13 @@ const bonuses = [
       bonus: [
           ['mythicupgrades:arcane_aura', -2]
       ]
+    },
+    {
+      armors: ['enva:titanium_helmet', 'enva:titanium_chestplate', 'enva:titanium_leggings', 'enva:titanium_boots'],
+      bonus: [
+          ['enva:water_resistance', -4],
+          ['enva:sunscreen', -4],
+      ]
     }
 ];
 

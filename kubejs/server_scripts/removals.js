@@ -8,8 +8,7 @@ ServerEvents.recipes(e => {
         'betterend:thallasium_ingot_alloy',
         'betterend:terminite_ingot',
         'farmersdelight:bread_from_smelting',
-        'farmersdelight:bread_from_smoking',
-        'create:crushing/raw_uranium_ore'
+        'farmersdelight:bread_from_smoking'
     ]
 
     idRemovals.forEach(removal => {

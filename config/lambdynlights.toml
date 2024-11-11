@@ -339,6 +339,9 @@ mode = "fancy"
 				marker_snowball = true
 				fangs_snowball = true
 
+			[light_sources.settings.entities.moborigins]
+				origin_slime = true
+
 			[light_sources.settings.entities.terraqueous]
 				coconut = true
 

@@ -27,7 +27,7 @@ ServerEvents.recipes(e => {
     ['wandering_wizard', 'endrem:witch_eye'],
     ['eclipse_soldier', 'new_soviet:black_knight'],
     ['hero', 'more_armor_trims:ram_armor_trim_smithing_template'],
-    ['golden_horns', 'goated:ram_block'],
+    ['golden_horns', 'meadow:goat_cheese_block'],
     ['dark_lord', 'enderzoology:withering_dust'],
     ['thief', 'silentsdelight:warden_heart'],
     ['chess_board_knight', 'new_soviet:white_knight'],
@@ -102,23 +102,6 @@ ServerEvents.recipes(e => {
           C: 'minecraft:iron_nugget'
         }
       ).id("mosmods1:chainmail_boots")
-    
-      e.shaped(
-        Item.of('enderchests:ender_pouch', 1), 
-        [
-          'ABA',
-          'FCF',
-          'DED'
-        ],
-        {
-          A: 'create:brass_sheet',
-          B: 'simple_quiver:quiver',
-          C: 'moretotems:teleporting_totem_of_undying',
-          D: 'create:brass_ingot',
-          E: '#minecraft:wool',
-          F: 'things:gleaming_powder'
-        }
-      ).id("enderchests:ender_pouch")
     
       e.shaped(
         Item.of('naturescompass:naturescompass', 1), 
@@ -345,66 +328,6 @@ ServerEvents.recipes(e => {
       ).id("sophisticatedbackpacks:backpack")
     
       e.shaped(
-        Item.of('immersive_armors:steampunk_helmet', 1), 
-        [
-          'A A',
-          'B E',
-          'DCD'
-        ],
-        {
-          A: 'betterend:leather_stripe',
-          B: 'minecraft:redstone_torch',
-          C: 'minecraft:ender_eye',
-          D: 'minecraft:white_stained_glass',
-          E: 'minecraft:golden_carrot'
-        }
-      ).id("immersive_armors:steampunk_helmet")
-    
-      e.shaped(
-        Item.of('immersive_armors:steampunk_chestplate', 1), 
-        [
-          'B B',
-          'DBA',
-          'BCE'
-        ],
-        {
-          A: 'minecraft:clock',
-          B: 'minecraft:gold_ingot',
-          C: 'minecraft:piston',
-          D: 'minecraft:compass',
-          E: 'create:cogwheel'
-        }
-      ).id("immersive_armors:steampunk_chestplate")
-    
-      e.shaped(
-        Item.of('immersive_armors:steampunk_leggings', 1), 
-        [
-          'AAA',
-          'CBC',
-          'A A'
-        ],
-        {
-          A: 'minecraft:gold_ingot',
-          B: 'minecraft:rabbit_foot',
-          C: 'minecraft:piston'
-        }
-      ).id("immersive_armors:steampunk_leggings")
-    
-      e.shaped(
-        Item.of('immersive_armors:steampunk_boots', 1), 
-        [
-          'C C',
-          'A A',
-          'B B'
-        ],
-        {
-          A: 'minecraft:gold_ingot',
-          B: 'minecraft:phantom_membrane',
-          C: 'minecraft:piston'
-        }
-      ).id("immersive_armors:steampunk_boots")
-    
-      e.shaped(
           Item.of('immersive_paintings:painting', 1),
           [
               'BBB',
@@ -511,7 +434,7 @@ ServerEvents.recipes(e => {
       ).id("umbrellas:umbrella")
     
       e.shaped(
-        Item.of('projectiles:dynamite', 1), 
+        Item.of('projectiles:dynamite', 3), 
         [
           ' D ',
           'CBC',
@@ -521,13 +444,105 @@ ServerEvents.recipes(e => {
           A: '#minecraft:sand',
           B: 'minecraft:gunpowder',
           C: 'minecraft:paper',
-          D: 'farmersdelight:rope'
+          D: 'minecraft:string'
         }
       ).id("projectiles:dynamite")
     
       e.remove({ id: 'projectiles:dynamite_sand' })
     
       e.remove({ id: 'projectiles:dynamite_red_sand' })
+    
+      e.remove({ id: 'projectiles:dynamite_tnt' })
+    
+      e.remove({ id: 'terraqueous:iron_ingot_from_smelting_dust' })
+    
+      e.remove({ id: 'terraqueous:iron_ingot_from_blasting_dust' })
+    
+      e.remove({ id: 'terraqueous:gold_ingot_from_smelting_dust' })
+    
+      e.remove({ id: 'terraqueous:gold_ingot_from_blasting_dust' })
+    
+      e.remove({ id: 'terraqueous:copper_ingot_from_smelting_dust' })
+    
+      e.remove({ id: 'terraqueous:copper_ingot_from_blasting_dust' })
+    
+      e.remove({ id: 'terraqueous:amethyst_from_smelting_dust' })
+    
+      e.remove({ id: 'terraqueous:diamond_from_smelting_dust' })
+    
+      e.remove({ id: 'terraqueous:emerald_from_smelting_dust' })
+    
+      e.shaped(
+        Item.of('minecraft:iron_ingot', 1), 
+        [
+          'AAA',
+          'AAA',
+          'AAA'
+        ],
+        {
+          A: 'terraqueous:iron_dust'
+        }
+      ).id("terraqueous:iron_ingot")
+    
+      e.shaped(
+        Item.of('minecraft:gold_ingot', 1), 
+        [
+          'AAA',
+          'AAA',
+          'AAA'
+        ],
+        {
+          A: 'terraqueous:gold_dust'
+        }
+      ).id("terraqueous:gold_ingot")
+    
+      e.shaped(
+        Item.of('minecraft:copper_ingot', 1), 
+        [
+          'AAA',
+          'AAA',
+          'AAA'
+        ],
+        {
+          A: 'terraqueous:copper_dust'
+        }
+      ).id("terraqueous:copper_ingot")
+    
+      e.shaped(
+        Item.of('minecraft:amethyst_shard', 1), 
+        [
+          'AAA',
+          'AAA',
+          'AAA'
+        ],
+        {
+          A: 'terraqueous:amethyst_dust'
+        }
+      ).id("terraqueous:amethyst_shard")
+    
+      e.shaped(
+        Item.of('minecraft:diamond', 1), 
+        [
+          'AAA',
+          'AAA',
+          'AAA'
+        ],
+        {
+          A: 'terraqueous:diamond_dust'
+        }
+      ).id("terraqueous:diamond")
+    
+      e.shaped(
+        Item.of('minecraft:emerald', 1), 
+        [
+          'AAA',
+          'AAA',
+          'AAA'
+        ],
+        {
+          A: 'terraqueous:emerald_dust'
+        }
+      ).id("terraqueous:emerald")
       
     
     e.shapeless('minecraft:gunpowder', ['betterend:crystalline_sulphur', 'meadow:alpine_salt', '#minecraft:coals']).id('mosmods2:shapeless/gunpowder_from_sulfur')
@@ -569,7 +584,7 @@ ServerEvents.recipes(e => {
       "black"
     ].forEach((color) => {
       e.shaped(
-        Item.of(`new_soviet:${color}_pawn`, 1), 
+        Item.of(`new_soviet:${color}_pawn`, 2), 
         [
           ' B ',
           ' B ',

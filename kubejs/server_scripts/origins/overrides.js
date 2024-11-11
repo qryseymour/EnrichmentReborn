@@ -141,60 +141,6 @@ ServerEvents.highPriorityData(e => {
         }
     })
 
-    // water vulnerability buff
-    e.addJson('origins:powers/water_vulnerability.json', {
-        loading_priority: 10,
-        loading_priority: 10,
-        type: 'origins:damage_over_time',
-        interval: 20,
-        onset_delay: 1,
-        damage: 2,
-        damage_easy: 1,
-        damage_source: {
-          name: 'hurt_by_water',
-          unblockable: true,
-          bypasses_armor: true
-        },
-        protection_enchantment: 'origins:water_protection',
-        protection_effectiveness: 1.0,
-        condition: {
-          type: 'origins:and',
-          conditions: [
-            {
-              inverted: true,
-              type: 'origins:block_in_radius',
-              block_condition: {
-                type: 'origins:block',
-                block: 'minecraft:conduit'
-              },
-              radius: '20',
-              shape: 'cube',
-              comparison: '>=',
-              compare_to: 1
-            },
-            {
-              type: 'origins:status_effect',
-              effect: 'minecraft:conduit_power',
-              inverted: true
-            },
-            {
-              type: 'origins:or',
-              conditions: [
-                {
-                  type: 'origins:fluid_height',
-                  fluid: 'minecraft:water',
-                  comparison: '>',
-                  compare_to: 0.0
-                },
-                {
-                  type: 'origins:in_rain'
-                }
-              ]
-            }
-          ]
-        }
-    })
-
     // vegetarian fix
     e.addJson('origins:powers/vegetarian.json', {
         loading_priority: 10,
@@ -260,6 +206,23 @@ ServerEvents.highPriorityData(e => {
         impact: 1
     })
     
+    e.addJson('origins:origins/enderian.json', {
+        loading_priority: 10,
+        powers: [
+            'origins:throw_ender_pearl',
+            'custom_origins:updated_water_vulnerability',
+            'origins:pumpkin_hate',
+            'origins:extra_reach',
+            'origins:ender_particles',
+            'origins:damage_from_potions'
+        ],
+        icon: {
+            item: 'minecraft:ender_pearl'
+        },
+        order: 1,
+        impact: 2
+    })
+    
     e.addJson('origins:origins/blazeborn.json', {
         loading_priority: 10,
         powers: [
@@ -267,7 +230,7 @@ ServerEvents.highPriorityData(e => {
             'origins:nether_spawn',
             'origins:burning_wrath',
             'origins:hotblooded',
-            'origins:water_vulnerability',
+            'custom_origins:updated_water_vulnerability',
             'origins:flame_particles',
             'origins:damage_from_snowballs',
             'origins:damage_from_potions',
@@ -277,6 +240,43 @@ ServerEvents.highPriorityData(e => {
             item: 'minecraft:blaze_powder'
         },
         order: 1,
+        impact: 3
+    })
+    
+    e.addJson('moborigins:origins/snowgolem.json', {
+        loading_priority: 10,
+        powers: [
+            'custom_origins:updated_water_vulnerability',
+            'moborigins:temperature',
+            'moborigins:overheat',
+            'moborigins:melting',
+            'moborigins:stronger_snowballs',
+            'moborigins:snow_trail',
+            'moborigins:frigid_strength'
+        ],
+        icon: {
+            item: 'minecraft:snowball' 
+        },
+        order: 4,
+        impact: 3
+    })
+    
+    e.addJson('moborigins:origins/strider.json', {
+        loading_priority: 10,
+        powers: [
+            'origins:fire_immunity',
+            'origins:nether_spawn',
+            'custom_origins:updated_water_vulnerability',
+            'moborigins:lava_walk',
+            'moborigins:surface_slowness',
+            'moborigins:rideable_creature',
+            'moborigins:strider_shake',
+            'moborigins:warped_fungus_eater'
+        ],
+        icon: {
+            item: 'minecraft:warped_fungus_on_a_stick'
+        },
+        order: 4,
         impact: 3
     })
 })

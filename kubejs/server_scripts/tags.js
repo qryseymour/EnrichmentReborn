@@ -17,9 +17,7 @@ ServerEvents.tags('item', event => {
         "plentyofarmors:mangrove",
         "plentyofarmors:cactus",
         "plentyofarmors:slime",
-        "plentyofarmors:brick",
-        "immersive_armors:wooden",
-        "immersive_armors:bone"
+        "plentyofarmors:brick"
     ]
 
     let early_game_sets = [
@@ -31,17 +29,12 @@ ServerEvents.tags('item', event => {
         "plentyofarmors:quartz",
         "plentyofarmors:redstone",
         "plentyofarmors:copper",
-        "immersive_armors:wither",
-        "immersive_armors:warrior",
-        "immersive_armors:robe",
-        "immersive_armors:slime",
         "spider_caves:spider",
         "meadow:fur"
     ]
 
     let mid_game_sets = [
         "minecraft:iron",
-        "immersive_armors:steampunk",
         "plentyofarmors:phantom",
         "plentyofarmors:crying_obsidian",
         "plentyofarmors:obsidian",
@@ -50,14 +43,12 @@ ServerEvents.tags('item', event => {
         "plentyofarmors:emerald",
         "phantom_armor:phantom_armor",
         "betterend:terminite",
-        "immersive_armors:divine",
     ]
 
     let late_game_sets = [
         "minecraft:diamond",
         "minecraft:netherite",
         "mutantmonsters:mutant_skeleton",
-        "immersive_armors:heavy",
         "gildedarmor:gilded_netherite",
         "astro:mauveine",
         "dungeonnowloading:spawner",
@@ -70,7 +61,6 @@ ServerEvents.tags('item', event => {
         "fantasy_armor:chess_board_knight",
         "fantasy_armor:dark_lord",
         "fantasy_armor:sunset_wings",
-        "immersive_armors:prismarine",
         "plentyofarmors:frozen_diamond",
         "plentyofarmors:echo_shard",
         "plentyofarmors:amethyst",
@@ -133,7 +123,6 @@ ServerEvents.tags('item', event => {
         /minecraft:golden_(helmet|chestplate|leggings|boots|axe|sword|pickaxe|shovel|hoe)/,
         /minecraft:netherite_(helmet|chestplate|leggings|boots|axe|sword|pickaxe|shovel|hoe)/,
         /mythicupgrades:(ruby|topaz|peridot|jade|aquamarine|sapphire|ametrine)_(helmet|chestplate|leggings|boots|axe|sword|pickaxe|shovel|hoe)/,
-        /create:netherite_diving_(helmet|backtank|boots)/,
         /gildedarmor:gilded_.*_(helmet|chestplate|leggings|boots)/,
         /betterend:crystalite_(helmet|chestplate|leggings|boots)/,
         /plentyofarmors:(ender_netherite|marine_diamond|stardusite)_(helmet|chestplate|leggings|boots)/,
@@ -204,8 +193,6 @@ ServerEvents.tags('item', event => {
         'betterend:shadow_berry_raw',
         'betterend:sweet_berry_jelly',
         'betterend:umbrella_cluster_juice',
-        'create:chocolate_glazed_berries',
-        'create:honeyed_apple',
         'farmersdelight:apple_cider',
         'farmersdelight:apple_pie_slice',
         'farmersdelight:cabbage_leaf',
@@ -260,16 +247,11 @@ ServerEvents.tags('item', event => {
         'regions_unexplored:duskmelon_slice',
         'regions_unexplored:hanging_earlight_fruit',
         'regions_unexplored:meadow_sage',
-        'regions_unexplored:salmonberry',
-        'snowyspirit:candy_cane',
-        'snowyspirit:eggnog',
-        'snowyspirit:gingerbread_cookie',
+        'regions_unexplored:salmonberry'
     ])
 
     // stuff that ignores vegetarian vs carnivore
     event.add('origins:ignore_diet', [
-        'create:bar_of_chocolate',
-        'create:builders_tea',
         'minecraft:enchanted_golden_apple',
         'minecraft:golden_apple',
         'minecraft:honey_bottle',

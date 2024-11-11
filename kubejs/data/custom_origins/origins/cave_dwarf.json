@@ -1,7 +1,7 @@
 {
     "name": "Cave Dwarf",
     "description": "An engineer of age; a tinkerer of grandiose; a smith of greatness: A Cave Dwarf. Made exclusively for mo_mo.",
-    "icon": "create:cogwheel",
+    "icon": "minecraft:clock",
     "powers": [
         "custom_origins:cave_dwarf/darkvision",
         "custom_origins:cave_dwarf/darkvision_less_colour",
