@@ -44,7 +44,7 @@ ServerEvents.recipes(e => {
         {
           A: 'snowballs_plus:evoker_fangs',
           B: 'minecraft:heart_of_the_sea',  
-          C: 'projectiles:prismarine_arrow'
+          C: 'plentyofarmors:ice_shard'
         }
       ).id("mosmods1:trident")
     
@@ -232,7 +232,7 @@ ServerEvents.recipes(e => {
         {
           A: 'minecraft:gold_ingot',
           B: 'minecraft:red_dye',
-          C: '#enrichment:columns',
+          C: '#enrichment:pillars',
           D: 'minecraft:netherite_scrap',
           E: 'minecraft:feather'
         }
@@ -278,7 +278,7 @@ ServerEvents.recipes(e => {
         {
           A: 'minecraft:gold_ingot',
           B: 'minecraft:leather',
-          C: '#enrichment:columns',
+          C: '#enrichment:pillars',
           D: 'minecraft:netherite_scrap'
         }
       ).id("armoroftheages:centurion_armor_feet")
@@ -297,19 +297,281 @@ ServerEvents.recipes(e => {
           D: 'mcwholidays:stone_cross'
         }
       ).id("armoroftheages:holy_armor_chest")
-    
+      
       e.shaped(
-        Item.of('astro:gravity_bomb', 64), 
+          Item.of('botania:enchanted_soil', 1),
+          [
+            'BBB',
+            'BAB',
+            'BCB'
+          ],
+          {
+            A: 'minecraft:grass_block',
+            B: 'minecraft:diamond',
+            C: 'exlinefurniture:flower_arrangement2'
+          }
+      ).id("enrichment:enchanted_soil")
+  
+      e.shaped(
+        Item.of('botania:rainbow_rod', 1),
         [
-          'BBB',
-          'BAB',
-          'BBB'
+          ' CB',
+          'DAC',
+          'AE '
         ],
         {
-          A: 'astro:mauveine_ingot',
-          B: 'projectiles:dynamite'
+          A: 'botania:elementium_ingot',
+          B: 'botania:dragonstone',
+          C: 'botania:pixie_dust',
+          D: 'xtraarrows:diamond_freezing_arrow',
+          E: 'minecraft:globe_banner_pattern'
         }
-      ).id("astro:gravity_bomb")
+      ).id("botania:rainbow_rod")
+    
+      e.shaped(
+          Item.of('botania:gravity_rod', 1),
+          [
+            ' EC',
+            'DBE',
+            'AF '
+          ],
+          {
+            A: 'botania:dreamwood_wand',
+            B: 'botania:dragonstone',
+            C: 'betterend:clawfern',
+            D: 'sophisticatedbackpacks:battery_upgrade',
+            E: 'regions_unexplored:pointed_redstone',
+            F: 'xtraarrows:gravity_controller'
+          }
+      ).id("botania:gravity_rod")
+      
+      e.shaped(
+          Item.of('botania:water_ring', 1),
+          [
+            'BAD',
+            'ACA',
+            'EAF'
+          ],
+          {
+            A: 'botania:manasteel_ingot',
+            B: 'botania:rune_water',
+            C: 'minecraft:heart_of_the_sea',
+            D: 'minecraft:pufferfish',
+            E: 'minecraft:cod',
+            F: 'minecraft:trident'
+          }
+      ).id("botania:water_ring")
+      
+      e.shaped(
+          Item.of('botania:dodge_ring', 1),
+          [
+            'CA ',
+            'ADA',
+            ' AB'
+          ],
+          {
+            A: 'botania:manasteel_ingot',
+            B: 'botania:rune_air',
+            C: 'minecraft:emerald',
+            D: 'minecraft:wither_skeleton_skull'
+          }
+      ).id("botania:dodge_ring")
+      
+      e.shaped(
+          Item.of('botania:mining_ring', 1),
+          [
+            'BAC',
+            'ADA',
+            ' A '
+          ],
+          {
+            A: 'botania:manasteel_ingot',
+            B: 'botania:rune_earth',
+            C: 'minecraft:golden_pickaxe',
+            D: 'beachparty:rubber_ring_axolotl'
+          }
+      ).id("botania:mining_ring")
+    
+      e.shaped(
+          Item.of('botania:holy_cloak', 1),
+          [
+            'DBD',
+            'CDC',
+            'CAC'
+          ],
+          {
+            A: 'botania:life_essence',
+            B: 'botania:black_lotus',
+            C: 'minecraft:glowstone_dust',
+            D: 'minecraft:white_wool'
+          }
+      ).id("botania:holy_cloak")
+      
+      e.shaped(
+          Item.of('botania:balance_cloak', 1),
+          [
+            'DBD',
+            'CDC',
+            'CAC'
+          ],
+          {
+            A: 'botania:life_essence',
+            B: 'botania:black_lotus',
+            C: 'minecraft:emerald',
+            D: 'minecraft:light_gray_wool'
+          }
+      ).id("botania:balance_cloak")
+      
+      e.shaped(
+          Item.of('botania:unholy_cloak', 1),
+          [
+            'DBD',
+            'CDC',
+            'CAC'
+          ],
+          {
+            A: 'botania:life_essence',
+            B: 'botania:black_lotus',
+            C: 'minecraft:redstone',
+            D: 'minecraft:black_wool'
+          }
+      ).id("botania:unholy_cloak")
+    
+      e.shaped(
+          Item.of('botania:invisibility_cloak', 1),
+          [
+            'CDC',
+            'BEB',
+            'BAB'
+          ],
+          {
+            A: 'botania:mana_pearl',
+            B: 'botania:mana_glass',
+            C: 'minecraft:prismarine_crystals',
+            D: 'minecraft:white_wool',
+            E: 'mutantmonsters:mutant_skeleton_rib_cage'
+          }
+      ).id("botania:invisibility_cloak")
+      
+      e.shaped(
+          Item.of('botania:super_lava_pendant', 1),
+          [
+            'BEB',
+            'BCB',
+            'DAD'
+          ],
+          {
+            A: 'botania:life_essence',
+            B: 'minecraft:blaze_rod',
+            C: 'botania:lava_pendant',
+            D: 'minecraft:nether_brick',
+            E: 'minecraft:wither_skeleton_skull'
+          }
+      ).id("botania:super_lava_pendant")
+      
+      e.shaped(
+          Item.of('botania:super_cloud_pendant', 1),
+          [
+            'BEB',
+            'BCB',
+            'DAD'
+          ],
+          {
+            A: 'botania:life_essence',
+            B: 'minecraft:ghast_tear',
+            C: 'botania:cloud_pendant',
+            D: 'minecraft:white_wool',
+            E: 'botania:overgrowth_seed'
+          }
+      ).id("botania:super_cloud_pendant")
+    
+      e.shaped(
+          Item.of('botania:travel_belt', 1),
+          [
+            'CDF',
+            'DED',
+            'ADB'
+          ],
+          {
+            A: 'botania:manasteel_ingot',
+            B: 'botania:rune_air',
+            C: 'botania:rune_water',
+            D: 'minecraft:leather',
+            E: 'minecraft:cod',
+            F: 'minecraft:salmon'
+          }
+      ).id("botania:travel_belt")
+      
+      e.shaped(
+          Item.of('botania:super_travel_belt', 1),
+          [
+            'CDE',
+            'DBD',
+            'ADC'
+          ],
+          {
+            A: 'botania:life_essence',
+            B: 'botania:travel_belt',
+            C: 'botania:elementium_ingot',
+            D: 'botania:black_lotus',
+            E: 'phantom_armor:phantom_leather'
+          }
+      ).id("botania:super_travel_belt")
+    
+      e.shaped(
+          Item.of('botania:speed_up_belt', 1),
+          [
+            'ECE',
+            'BAB',
+            'EDE'
+          ],
+          {
+            A: 'botania:travel_belt',
+            B: 'botania:grass_seeds',
+            C: 'minecraft:map',
+            D: 'minecraft:sugar',
+            E: 'botania:black_lotus'
+          }
+      ).id("botania:speed_up_belt")
+    
+      e.shaped(
+          Item.of('botania:knockback_belt', 1),
+          [
+            'CDE',
+            'DED',
+            'ADB'
+          ],
+          {
+            A: 'botania:manasteel_ingot',
+            B: 'botania:rune_earth',
+            C: 'botania:rune_fire',
+            D: 'minecraft:leather',
+            E: 'botania:black_lotus'
+          }
+      ).id("botania:knockback_belt")
+    
+      let map = [
+        ["helmet", "spring"],
+        ["chestplate", "summer"],
+        ["leggings", "autumn"],
+        ["boots", "winter"],  
+      ].forEach((item) => {
+        e.shaped(
+          Item.of(`botania:terrasteel_${item[0]}`, 1),
+          [
+            'CDC',
+            'BAB',
+            'EBE'
+          ],
+          {
+            A: `botania:elementium_${item[0]}`,
+            B: 'botania:terrasteel_ingot',
+            C: 'botania:livingwood_twig',
+            D: `botania:rune_${item[1]}`,
+            E: 'minecraft:netherite_ingot'
+          }
+      ).id(`botania:terrasteel_${item[0]}`)
+      })
     
       e.shaped(
         Item.of('sophisticatedbackpacks:backpack', 1), 
@@ -326,6 +588,91 @@ ServerEvents.recipes(e => {
           E: 'minecraft:leather_leggings'
         }
       ).id("sophisticatedbackpacks:backpack")
+      
+      e.shaped(
+        Item.of('immersive_armors:steampunk_helmet', 1), 
+        [
+          'A A',
+          'B E',
+          'DCD'
+        ],
+        {
+          A: 'betterend:leather_stripe',
+          B: 'minecraft:redstone_torch',
+          C: 'minecraft:ender_eye',
+          D: 'minecraft:white_stained_glass',
+          E: 'minecraft:golden_carrot'
+        }
+      ).id("immersive_armors:steampunk_helmet")
+      
+      e.shaped(
+        Item.of('immersive_armors:heavy_helmet', 1), 
+        [
+          'AAA',
+          'ABA',
+          '   '
+        ],
+        {
+          A: 'minecraft:iron_block',
+          B: 'minecraft:netherite_block'
+        }
+      ).id("immersive_armors:heavy_helmet")
+    
+      e.shaped(
+        Item.of('immersive_armors:steampunk_chestplate', 1), 
+        [
+          'B B',
+          'DBA',
+          'BCA'
+        ],
+        {
+          A: 'minecraft:clock',
+          B: 'minecraft:gold_ingot',
+          C: 'minecraft:piston',
+          D: 'minecraft:compass'
+        }
+      ).id("immersive_armors:steampunk_chestplate")
+    
+      e.shaped(
+        Item.of('immersive_armors:steampunk_leggings', 1), 
+        [
+          'AAA',
+          'CBC',
+          'A A'
+        ],
+        {
+          A: 'minecraft:gold_ingot',
+          B: 'minecraft:rabbit_foot',
+          C: 'minecraft:piston'
+        }
+      ).id("immersive_armors:steampunk_leggings")
+    
+      e.shaped(
+        Item.of('immersive_armors:steampunk_boots', 1), 
+        [
+          'C C',
+          'A A',
+          'B B'
+        ],
+        {
+          A: 'minecraft:gold_ingot',
+          B: 'minecraft:phantom_membrane',
+          C: 'minecraft:piston'
+        }
+      ).id("immersive_armors:steampunk_boots")
+      
+      e.shaped(
+        Item.of('immersive_armors:heavy_boots', 1), 
+        [
+          'ABA',
+          'ABA',
+          'B B'
+        ],
+        {
+          A: 'minecraft:iron_block',
+          B: 'minecraft:netherite_ingot'
+        }
+      ).id("immersive_armors:heavy_boots")
     
       e.shaped(
           Item.of('immersive_paintings:painting', 1),
@@ -383,15 +730,14 @@ ServerEvents.recipes(e => {
       e.shaped(
         Item.of('plentyofarmors:marine_diamond', 1), 
         [
-          'CDC',
-          'ABA',
+          '   ',
+          'CBC',
           ' A '
         ],
         {
-          A: 'minecraft:diamond',
+          A: 'minecraft:diamond_block',
           B: 'minecraft:heart_of_the_sea',
-          C: 'minecraft:sea_lantern',
-          D: 'minecraft:diamond_block'
+          C: 'minecraft:sea_lantern'
         }
       ).id("plentyofarmors:marine_diamond")
     
@@ -433,124 +779,11 @@ ServerEvents.recipes(e => {
         }
       ).id("umbrellas:umbrella")
     
-      e.shaped(
-        Item.of('projectiles:dynamite', 3), 
-        [
-          ' D ',
-          'CBC',
-          'CAC'
-        ],
-        {
-          A: '#minecraft:sand',
-          B: 'minecraft:gunpowder',
-          C: 'minecraft:paper',
-          D: 'minecraft:string'
-        }
-      ).id("projectiles:dynamite")
-    
-      e.remove({ id: 'projectiles:dynamite_sand' })
-    
-      e.remove({ id: 'projectiles:dynamite_red_sand' })
-    
-      e.remove({ id: 'projectiles:dynamite_tnt' })
-    
-      e.remove({ id: 'terraqueous:iron_ingot_from_smelting_dust' })
-    
-      e.remove({ id: 'terraqueous:iron_ingot_from_blasting_dust' })
-    
-      e.remove({ id: 'terraqueous:gold_ingot_from_smelting_dust' })
-    
-      e.remove({ id: 'terraqueous:gold_ingot_from_blasting_dust' })
-    
-      e.remove({ id: 'terraqueous:copper_ingot_from_smelting_dust' })
-    
-      e.remove({ id: 'terraqueous:copper_ingot_from_blasting_dust' })
-    
-      e.remove({ id: 'terraqueous:amethyst_from_smelting_dust' })
-    
-      e.remove({ id: 'terraqueous:diamond_from_smelting_dust' })
-    
-      e.remove({ id: 'terraqueous:emerald_from_smelting_dust' })
-    
-      e.shaped(
-        Item.of('minecraft:iron_ingot', 1), 
-        [
-          'AAA',
-          'AAA',
-          'AAA'
-        ],
-        {
-          A: 'terraqueous:iron_dust'
-        }
-      ).id("terraqueous:iron_ingot")
-    
-      e.shaped(
-        Item.of('minecraft:gold_ingot', 1), 
-        [
-          'AAA',
-          'AAA',
-          'AAA'
-        ],
-        {
-          A: 'terraqueous:gold_dust'
-        }
-      ).id("terraqueous:gold_ingot")
-    
-      e.shaped(
-        Item.of('minecraft:copper_ingot', 1), 
-        [
-          'AAA',
-          'AAA',
-          'AAA'
-        ],
-        {
-          A: 'terraqueous:copper_dust'
-        }
-      ).id("terraqueous:copper_ingot")
-    
-      e.shaped(
-        Item.of('minecraft:amethyst_shard', 1), 
-        [
-          'AAA',
-          'AAA',
-          'AAA'
-        ],
-        {
-          A: 'terraqueous:amethyst_dust'
-        }
-      ).id("terraqueous:amethyst_shard")
-    
-      e.shaped(
-        Item.of('minecraft:diamond', 1), 
-        [
-          'AAA',
-          'AAA',
-          'AAA'
-        ],
-        {
-          A: 'terraqueous:diamond_dust'
-        }
-      ).id("terraqueous:diamond")
-    
-      e.shaped(
-        Item.of('minecraft:emerald', 1), 
-        [
-          'AAA',
-          'AAA',
-          'AAA'
-        ],
-        {
-          A: 'terraqueous:emerald_dust'
-        }
-      ).id("terraqueous:emerald")
-      
-    
     e.shapeless('minecraft:gunpowder', ['betterend:crystalline_sulphur', 'meadow:alpine_salt', '#minecraft:coals']).id('mosmods2:shapeless/gunpowder_from_sulfur')
     e.shapeless('4x minecraft:stick', '#regions_unexplored:branches').id('mosmods2:shapeless/stick_from_branch')
     e.shapeless('regions_unexplored:mossy_stone', ['minecraft:stone', '#kubejs:moss']).id('kubejs:shapeless/mossy_stone')
     e.shapeless('minecraft:ender_eye', ['minecraft:ender_pearl', 'minecraft:blaze_powder', 'minecraft:blaze_powder']).id('minecraft:ender_eye')
     e.shapeless('origins:orb_of_origin', ['endrem:old_eye', 'endrem:rogue_eye', 'endrem:nether_eye', 'endrem:cold_eye', 'endrem:lost_eye', 'endrem:corrupted_eye', 'endrem:cursed_eye', 'endrem:black_eye', 'endrem:magical_eye']).id('enrichment:orb_of_origin')
-    e.shapeless('astro:mauveine_ingot', ['minecraft:amethyst_cluster', 'minecraft:amethyst_cluster', 'phantom_armor:phantom_leather', 'phantom_armor:phantom_leather', 'phantom_armor:phantom_leather', '#c:tools/knives', '#enrichment:rabbit_plushes', '#enrichment:rabbit_plushes', '#enrichment:rabbit_plushes']).id('enrichment:mauveine')
     e.shapeless('plentyofarmors:stardusite_helmet', ['plentyofarmors:stardusite_ingot', 'minecraft:nether_star', 'bosses_of_mass_destruction:ancient_anima', 'mutantmonsters:mutant_skeleton_skull', 'plentyofarmors:amethyst_gem', 'minecraft:echo_shard', '#regions_unexplored:prismarite_crystals', 'betterend:eternal_crystal', 'fantasy_armor:moon_crystal']).id('plentyofarmors:stardusite_helmet')
     e.shapeless('plentyofarmors:stardusite_chestplate', ['plentyofarmors:stardusite_ingot', 'silentsdelight:warden_heart', 'bosses_of_mass_destruction:blazing_eye', 'mutantmonsters:endersoul_hand',  'plentyofarmors:amethyst_gem', 'minecraft:echo_shard', '#regions_unexplored:prismarite_crystals', 'betterend:eternal_crystal', 'fantasy_armor:moon_crystal']).id('plentyofarmors:stardusite_chestplate')
     e.shapeless('plentyofarmors:stardusite_leggings', ['plentyofarmors:stardusite_ingot', 'more_armor_trims:ram_armor_trim_smithing_template', 'bosses_of_mass_destruction:obsidian_heart', 'mutantmonsters:hulk_hammer',  'plentyofarmors:amethyst_gem', 'minecraft:echo_shard', '#regions_unexplored:prismarite_crystals', 'betterend:eternal_crystal', 'fantasy_armor:moon_crystal']).id('plentyofarmors:stardusite_leggings')
@@ -559,10 +792,8 @@ ServerEvents.recipes(e => {
     e.blasting('minecraft:glass', 'minecraft:sand').xp(0.1).id('mosmods2:blasting/glass')
     e.blasting('minecraft:stone', 'minecraft:cobblestone').xp(0.1).id('mosmods2:blasting/stone')
     // smithing
-    e.smithing(`astro:mauveine_sabre`, 'fantasy_armor:moon_crystal', `minecraft:diamond_sword`, 'astro:mauveine_ingot').id(`astro:mauveine_sabre`)
     armorTypes.forEach((piece) => {
       e.smithing(`minecraft:netherite_${piece}`, 'minecraft:black_dye', `minecraft:diamond_${piece}`, 'minecraft:netherite_ingot').id(`minecraft:netherite_${piece}_smithing`)
-      e.smithing(`astro:mauveine_${piece}`, 'fantasy_armor:moon_crystal', `minecraft:diamond_${piece}`, 'astro:mauveine_ingot').id(`astro:m${piece}`)
       fantasyArmorLink.forEach((link) => {
         e.smithing(`fantasy_armor:${link[0]}_${piece}`, 'fantasy_armor:moon_crystal', `minecraft:netherite_${piece}`, link[1]).id(`fantasy_armor:${link[0]}_${piece}`)
       })
@@ -578,6 +809,8 @@ ServerEvents.recipes(e => {
     basicWeapons.forEach((tool) => { 
       e.smithing(`basicweapons:netherite_${tool}`, 'minecraft:black_dye', `basicweapons:diamond_${tool}`, 'minecraft:netherite_ingot').id(`basicweapons:netherite_${tool}_smithing`)
     })
+    e.smithing('botania:terra_pick', 'botania:obedience_stick', '#enrichment:end_game_pick', 'botania:terrasteel_ingot').id('botania:terra_pick')
+    e.smithing('botania:terra_axe', 'botania:obedience_stick', '#enrichment:end_game_axe', 'botania:terrasteel_ingot').id('botania:terra_axe')
     // chess pieces
     let monochrome = [
       "white",

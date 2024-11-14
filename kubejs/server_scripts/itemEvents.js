@@ -60,3 +60,17 @@ ItemEvents.foodEaten("bosses_of_mass_destruction:crystal_fruit", e => {
     e.player.potionEffects.add("minecraft:resistance", 600, 1, false, true)
     e.player.potionEffects.add("minecraft:regeneration", 300, 2, false, true)
 })
+
+ItemEvents.rightClicked('botania:thorn_chakram', e => {
+    e.server.scheduleInTicks(1, (callback) => {
+        e.player.addItemCooldown('botania:thorn_chakram', 20)
+        e.player.addItemCooldown('botania:flare_chakram', 20)
+    })
+})
+
+ItemEvents.rightClicked('botania:flare_chakram', e => {
+    e.server.scheduleInTicks(1, (callback) => {
+        e.player.addItemCooldown('botania:thorn_chakram', 20)
+        e.player.addItemCooldown('botania:flare_chakram', 20)
+    })
+})

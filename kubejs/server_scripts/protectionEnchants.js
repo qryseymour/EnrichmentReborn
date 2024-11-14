@@ -54,4 +54,9 @@ EntityEvents.hurt(event => {
             };
         }
     }
+    if (ruptureProtectionCount > 0) {
+        if(!event.source.actual) return;
+        victim.knockback(Math.max(0, 1 - (ruptureProtectionCount * 0.15)), victim.x-event.source.actual.x, victim.z-event.source.actual.z);
+        victim.hurtMarked = true;
+    }
 })

@@ -30,7 +30,8 @@ ServerEvents.tags('item', event => {
         "plentyofarmors:redstone",
         "plentyofarmors:copper",
         "spider_caves:spider",
-        "meadow:fur"
+        "meadow:fur",
+        "botania:manaweave"
     ]
 
     let mid_game_sets = [
@@ -43,6 +44,7 @@ ServerEvents.tags('item', event => {
         "plentyofarmors:emerald",
         "phantom_armor:phantom_armor",
         "betterend:terminite",
+        "botania:manasteel"
     ]
 
     let late_game_sets = [
@@ -66,6 +68,7 @@ ServerEvents.tags('item', event => {
         "plentyofarmors:amethyst",
         "plentyofarmors:ender",
         "enva:titanium",
+        "botania:elementium"
     ]
 
     let end_game_sets = [
@@ -79,6 +82,7 @@ ServerEvents.tags('item', event => {
         "mythicupgrades:ametrine",
         "plentyofarmors:ender_netherite",
         "plentyofarmors:marine_diamond",
+        "botania:terrasteel"
     ]
 
     let mossAdditions = [
@@ -116,8 +120,7 @@ ServerEvents.tags('item', event => {
 
     event.add('mosmods2:cave_dwarf_tool', [
         /.*pickaxe$/,
-        "mutantmonsters:hulk_hammer",
-        "terraqueous:hammer"
+        "mutantmonsters:hulk_hammer"
     ])
     event.add('kubejs:precious_equipment', [
         /minecraft:golden_(helmet|chestplate|leggings|boots|axe|sword|pickaxe|shovel|hoe)/,
@@ -258,17 +261,13 @@ ServerEvents.tags('item', event => {
         'minecraft:suspicious_stew',
     ])
 
-    event.add('enrichment:columns', [
-        /terraqueous:.*capital$/
-    ])
-
     event.add('enrichment:pillars', [
-        /.*pillar$/
+        /.*:.*pillar/
     ])
 
     event.remove('bakery:knives', [
-        /.*shears.*/,
-        /.*sword.*/
+        /.*:.*shears/,
+        /.*:.*sword/
     ])
 
     event.add('bakery:knives', [
@@ -279,10 +278,6 @@ ServerEvents.tags('item', event => {
         /plushies:.*rabbit_plushie$/
     ])
 
-    event.add('c:shields', [
-        'new_shield_variants:tnt_shield'
-    ])
-
     event.add('origins:shields', [
         '#c:shields'
     ])
@@ -291,7 +286,7 @@ ServerEvents.tags('item', event => {
         /.*:.*chocolate.*/,
         /.*:.*diamond.*/,
         /.*:.*gold.*/,
-        /.*:.*(crystal|shard|shards|gem)$/
+        /.*:.*(crystal|shard|shards|gem)/
     ])
 
     event.add('camping:backpack_blacklist', [
@@ -310,7 +305,7 @@ ServerEvents.tags('item', event => {
     ])
 
     event.add('kubejs:soft_carpet', [
-        /(minecraft:.*|.*:.*(wool|moss))_carpet$/
+        /(minecraft:.*|.*:.*(wool|moss))_carpet/
     ])
 
     event.add('furnish:mail', [
@@ -337,6 +332,14 @@ ServerEvents.tags('item', event => {
         'herbalbrews:herbalbrews_standard',
         'meadow:meadow_standard',
         'vinery:vinery_standard',
+    ])
+
+    event.add('enrichment:end_game_pick', [
+        /mythicupgrades:.*_pickaxe/
+    ])
+
+    event.add('enrichment:end_game_axe', [
+        /mythicupgrades:.*_axe/
     ])
 
     armorTypes.forEach((piece) => {

@@ -6,37 +6,37 @@
         {
             "type": "patchouli:spotlight",
             "item": "minecraft:copper_block",
-            "text": "For every block.minecraft.copper_block, points are added to the total according to:$(br)(blocks)^0.45 * 2"
+            "text": "For every Block of Copper, points are added to the total according to:$(br)(blocks)^0.45 * 2"
         },
         {
             "type": "patchouli:spotlight",
             "item": "minecraft:iron_block",
-            "text": "For every block.minecraft.iron_block, points are added to the total according to:$(br)(blocks)^0.6 * 2"
+            "text": "For every Block of Iron, points are added to the total according to:$(br)(blocks)^0.6 * 2"
         },
         {
             "type": "patchouli:spotlight",
             "item": "minecraft:gold_block",
-            "text": "For every block.minecraft.gold_block, points are added to the total according to:$(br)(blocks)^0.95 * 0.5"
+            "text": "For every Block of Gold, points are added to the total according to:$(br)(blocks)^0.95 * 0.5"
         },
         {
             "type": "patchouli:spotlight",
             "item": "minecraft:amethyst_block",
-            "text": "For every block.minecraft.amethyst_block, points are added to the total according to:$(br)min(blocks, 8) * 8"
+            "text": "For every Block of Amethyst, points are added to the total according to:$(br)min(blocks, 8) * 8"
         },
         {
             "type": "patchouli:spotlight",
             "item": "minecraft:emerald_block",
-            "text": "For every block.minecraft.emerald_block, points are added to the total according to:$(br)(blocks)^0.95"
+            "text": "For every Block of Emerald, points are added to the total according to:$(br)(blocks)^0.95"
         },
         {
             "type": "patchouli:spotlight",
             "item": "minecraft:diamond_block",
-            "text": "For every block.minecraft.diamond_block, points are added to the total according to:$(br)(blocks)^0.75 * 5"
+            "text": "For every Block of Diamond, points are added to the total according to:$(br)(blocks)^0.75 * 5"
         },
         {
             "type": "patchouli:spotlight",
             "item": "minecraft:netherite_block",
-            "text": "For every block.minecraft.netherite_block, the total number of points is multiplied by:$(br)1 + (blocks * 0.05)"
+            "text": "For every Block of Netherite, the total number of points is multiplied by:$(br)1 + (blocks * 0.05)"
         }
     ],
     "sortnum": 1

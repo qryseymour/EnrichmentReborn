@@ -31,22 +31,22 @@
     "things:ender_pouch",
     "camping:enderpack",
     "camping:enderbag",
-    "terraqueous:ender_table",
-    "terraqueous:ender_dust",
     "bygonenether:gilded_netherite_shield",
     "new_soviet:sickle",
     "!new_shield_variants:(stone|iron|gold|diamond|tnt|ender)_shield",
     "snowballs_plus:healthy_heart",
     "snowballs_plus:bloodthirsty_heart",
     "things:diamond_pressure_plate",
-    "xtraarrows:gravity_controller",
     "enva:glass_bowl",
     "enva:water_glass_bowl",
     "yummyglass:glass_shard",
     "!enva:.*glass_helmet",
-    "!xtraarrows:.*(iron|golden|diamond|netherite).*_arrow",
-    "!xtraarrows:flint_(atlantean|explosive|ender|gravity)_arrow",
-    "!camping:(large|wanderer|sheep|goody)(|_)(backpack|bag)"
+    "!camping:(large|wanderer|sheep|goody)(|_)(backpack|bag)",
+    "botania:terra_sword",
+    "botania:star_sword",
+    "botania:ender_hand",
+    "botania:itemfinder",
+    "botania:flight_tiara"
   ],
   // -----------------------------------------------------------
   // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.

@@ -46,6 +46,7 @@ mode = "fancy"
 				parrot = true
 				creeper = true
 				lightning_bolt = true
+				ravager = true
 				evoker_fangs = true
 				tropical_fish = true
 				chest_minecart = true
@@ -61,6 +62,7 @@ mode = "fancy"
 				fireball = true
 				illusioner = true
 				wither_skull = true
+				eye_of_ender = true
 				wolf = true
 				zombie_villager = true
 				tnt_minecart = true
@@ -201,6 +203,9 @@ mode = "fancy"
 				sparrow = true
 				lizard = true
 
+			[light_sources.settings.entities.botania]
+				thorn_chakram = true
+
 			[light_sources.settings.entities.adventurez]
 				deer = true
 				thrown_rock = true
@@ -327,6 +332,7 @@ mode = "fancy"
 
 			[light_sources.settings.entities.astro]
 				gravity_bomb = true
+				gravity_bomb_down = true
 
 			[light_sources.settings.entities.snowballs_plus]
 				bloodthirsty_snowball = true
