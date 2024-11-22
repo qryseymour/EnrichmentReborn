@@ -16,8 +16,9 @@ ServerEvents.tags('item', event => {
         "plentyofarmors:acacia",
         "plentyofarmors:mangrove",
         "plentyofarmors:cactus",
-        "plentyofarmors:slime",
-        "plentyofarmors:brick"
+        "plentyofarmors:brick",       
+        "immersive_armors:wooden",
+        "immersive_armors:bone"
     ]
 
     let early_game_sets = [
@@ -29,6 +30,10 @@ ServerEvents.tags('item', event => {
         "plentyofarmors:quartz",
         "plentyofarmors:redstone",
         "plentyofarmors:copper",
+        "immersive_armors:wither",
+        "immersive_armors:warrior",
+        "immersive_armors:robe",
+        "immersive_armors:slime",
         "spider_caves:spider",
         "meadow:fur",
         "botania:manaweave"
@@ -41,7 +46,8 @@ ServerEvents.tags('item', event => {
         "plentyofarmors:obsidian",
         "plentyofarmors:hardened_ice",
         "plentyofarmors:reinforced_iron",
-        "plentyofarmors:emerald",
+        "immersive_armors:steampunk",
+        "immersive_armors:divine",
         "phantom_armor:phantom_armor",
         "betterend:terminite",
         "botania:manasteel"
@@ -67,6 +73,8 @@ ServerEvents.tags('item', event => {
         "plentyofarmors:echo_shard",
         "plentyofarmors:amethyst",
         "plentyofarmors:ender",
+        "immersive_armors:heavy",
+        "immersive_armors:prismarine",
         "enva:titanium",
         "botania:elementium"
     ]
@@ -120,7 +128,8 @@ ServerEvents.tags('item', event => {
 
     event.add('mosmods2:cave_dwarf_tool', [
         /.*pickaxe$/,
-        "mutantmonsters:hulk_hammer"
+        "mutantmonsters:hulk_hammer",
+        /basicweapons:.*_hammer$/
     ])
     event.add('kubejs:precious_equipment', [
         /minecraft:golden_(helmet|chestplate|leggings|boots|axe|sword|pickaxe|shovel|hoe)/,
@@ -259,23 +268,20 @@ ServerEvents.tags('item', event => {
         'minecraft:golden_apple',
         'minecraft:honey_bottle',
         'minecraft:suspicious_stew',
+        /(bakery|beachparty|candlelight|farmersdelight):chocolate_(.*_slice|truffle|milkshake|icecream|mousse|pie_slice)$/
     ])
 
     event.add('enrichment:pillars', [
-        /.*:.*pillar/
+        /.*:.*pillar$/
     ])
 
     event.remove('bakery:knives', [
-        /.*:.*shears/,
-        /.*:.*sword/
+        /.*:.*shears$/,
+        /.*:.*sword$/
     ])
 
     event.add('bakery:knives', [
         "#c:tools/knives"
-    ])
-
-    event.add('enrichment:rabbit_plushes', [
-        /plushies:.*rabbit_plushie$/
     ])
 
     event.add('origins:shields', [
@@ -286,7 +292,7 @@ ServerEvents.tags('item', event => {
         /.*:.*chocolate.*/,
         /.*:.*diamond.*/,
         /.*:.*gold.*/,
-        /.*:.*(crystal|shard|shards|gem)/
+        /.*:.*(crystal|shard|shards|gem)$/
     ])
 
     event.add('camping:backpack_blacklist', [
@@ -305,7 +311,7 @@ ServerEvents.tags('item', event => {
     ])
 
     event.add('kubejs:soft_carpet', [
-        /(minecraft:.*|.*:.*(wool|moss))_carpet/
+        /(minecraft:.*|.*:.*(wool|moss))_carpet$/
     ])
 
     event.add('furnish:mail', [
@@ -335,11 +341,11 @@ ServerEvents.tags('item', event => {
     ])
 
     event.add('enrichment:end_game_pick', [
-        /mythicupgrades:.*_pickaxe/
+        /mythicupgrades:.*_pickaxe$/
     ])
 
     event.add('enrichment:end_game_axe', [
-        /mythicupgrades:.*_axe/
+        /mythicupgrades:.*_axe$/
     ])
 
     armorTypes.forEach((piece) => {
@@ -359,6 +365,23 @@ ServerEvents.tags('item', event => {
             event.add(`enrichment:end_game_${piece}`, `${set}_${piece}`)
         })
         event.add(`enrichment:late_game_helmet`, `mutantmonsters:mutant_skeleton_skull`)
+    })
+
+    let armorOfTheAgesTypes = [
+        "head",
+        "chest",
+        "legs",
+        "feet"
+    ].forEach((set, index) => {
+        event.add(`enrichment:mid_game_${armorTypes[index]}`, `armoroftheages:japanese_light_armor_${set}`)
+        event.add(`enrichment:late_game_${armorTypes[index]}`, `armoroftheages:anubis_armor_${set}`)
+        event.add(`enrichment:late_game_${armorTypes[index]}`, `armoroftheages:centurion_armor_${set}`)
+        event.add(`enrichment:late_game_${armorTypes[index]}`, `armoroftheages:iron_plate_armor_${set}`)
+        event.add(`enrichment:late_game_${armorTypes[index]}`, `armoroftheages:o_yoroi_armor_${set}`)
+        event.add(`enrichment:late_game_${armorTypes[index]}`, `armoroftheages:pharaoh_armor_${set}`)
+        event.add(`enrichment:late_game_${armorTypes[index]}`, `armoroftheages:quetzalcoatl_armor_${set}`)
+        event.add(`enrichment:end_game_${armorTypes[index]}`, `armoroftheages:holy_armor_${set}`)
+        event.add(`enrichment:end_game_${armorTypes[index]}`, `armoroftheages:raijin_armor_${set}`)
     })
 })
   

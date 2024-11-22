@@ -37,6 +37,8 @@ LootJS.modifiers(e => {
         e.addLootTableModifier(lootTable).randomChance(0.0333).addLoot('mythicupgrades:topaz_upgrade_smithing_template')
     })
     e.addLootTableModifier('minecraft:chests/bastion_treasure').removeLoot('plentyofarmors:stardusite_ingot')
+    e.addLootTableModifier('minecraft:chests/underwater_ruin_big').removeLoot('plentyofarmors:marine_diamond')
+    e.addLootTableModifier('minecraft:chests/underwater_ruin_small').removeLoot('plentyofarmors:marine_diamond')
 
     e.addLootTableModifier(/betterstrongholds:chests\/(mess)/)
         .replaceLoot('minecraft:carrot', true)

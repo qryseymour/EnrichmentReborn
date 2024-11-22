@@ -151,6 +151,9 @@ mode = "fancy"
 				enderminy = true
 				concussion_creeper = true
 
+			[light_sources.settings.entities.regions_unexplored]
+				boat = true
+
 			[light_sources.settings.entities.mutantmonsters]
 				mutant_enderman = true
 				mutant_creeper = true
@@ -228,6 +231,9 @@ mode = "fancy"
 
 			[light_sources.settings.entities.origins]
 				enderian_pearl = true
+
+			[light_sources.settings.entities.doapi]
+				chair = true
 
 			[light_sources.settings.entities.dungeonnowloading]
 				spawner_carrier = true

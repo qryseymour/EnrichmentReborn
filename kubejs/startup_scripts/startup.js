@@ -34,7 +34,11 @@ global.fullRemovals = [
     "botania:star_sword",
     "botania:ender_hand",
     "botania:itemfinder",
-    "botania:flight_tiara"
+    "botania:flight_tiara",
+    /plentyofarmors:(slime|emerald)_(helmet|chestplate|leggings|boots)/,
+    "botania:laputa_shard",
+    "botania:aura_ring",
+    "botania:aura_ring_greater"
 ]
 
 ItemEvents.modification(event => {

@@ -6,18 +6,210 @@
   //        a spread factor of 1 means all structure's placement are not modified (useful if you want to use only custom spread factors)
   //        a spread factor above 1 means all structures are rarer
   //        a spread factor below 1 means all structure are more common
-  "spreadFactor": 4,
+  "spreadFactor": 1,
 
   // this is a list of custom spread factors
   "customSpreadFactors": [
     // example of the mansion being doubled in rarity (the mod's default)
     {
       "structure": "brewery:brewfest_tent",
-      "factor": 127
+      "factor": 10
     },
     {
       "structure": "bakery:bakery",
-      "factor": 127
+      "factor": 10
+    },
+    {
+      "structure": "bloomingnature:cottage",
+      "factor": 10
+    },
+    {
+      "structure": "bloomingnature:little_house",
+      "factor": 10
+    },
+    {
+      "structure": "meadow:chapel",
+      "factor": 10
+    },
+    {
+      "structure": "minecraft:shipwreck",
+      "factor": 2
+    },
+    {
+      "structure": "minecraft:shipwreck_beached",
+      "factor": 2
+    },
+    {
+      "structure": "minecraft:igloo",
+      "factor": 3
+    },
+    {
+      "structure": "minecraft:pillager_outpost",
+      "factor": 2
+    },
+    {
+      "structure": "minecraft:ruined_portal",
+      "factor": 2
+    },
+    {
+      "structure": "minecraft:ruined_portal_desert",
+      "factor": 2
+    },
+    {
+      "structure": "minecraft:ruined_portal_jungle",
+      "factor": 2
+    },
+    {
+      "structure": "minecraft:ruined_portal_mountain",
+      "factor": 2
+    },
+    {
+      "structure": "minecraft:ruined_portal_ocean",
+      "factor": 2
+    },
+    {
+      "structure": "minecraft:ruined_portal_swamp",
+      "factor": 2
+    },
+    {
+      "structure": "minecraft:swamp_hut",
+      "factor": 2
+    },
+    {
+      "structure": "bloomingnature:swamp_hut",
+      "factor": 2
+    },
+    {
+      "structure": "nova_structures:illager_camp",
+      "factor": 2
+    },
+    {
+      "structure": "nova_structures:illager_hideout",
+      "factor": 2
+    },
+    {
+      "structure": "nova_structures:illager_manor",
+      "factor": 2
+    },
+    {
+      "structure": "nova_structures:stray_fort",
+      "factor": 2
+    },
+    {
+      "structure": "nova_structures:witch_villa",
+      "factor": 2
+    },
+    {
+      "structure": "nova_structures:mangrove_witch_hut",
+      "factor": 2
+    },
+    {
+      "structure": "meadow:logging_camp",
+      "factor": 3
+    },
+    {
+      "structure": "minecraft:village_desert",
+      "factor": 3
+    },
+    {
+      "structure": "minecraft:village_plains",
+      "factor": 3
+    },
+    {
+      "structure": "minecraft:village_savanna",
+      "factor": 3
+    },
+    {
+      "structure": "minecraft:village_swowy",
+      "factor": 3
+    },
+    {
+      "structure": "minecraft:village_taiga",
+      "factor": 3
+    },
+    {
+      "structure": "nova_structures:tavern_acacia",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:tavern_birch",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:tavern_cherry",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:tavern_dark_oak",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:tavern_desert",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:tavern_jungle",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:tavern_mangrove",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:tavern_oak",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:tavern_snowy",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:tavern_spruce",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:tavern_swamp",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:firewatch_tower_birch",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:firewatch_tower_cherry",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:firewatch_tower_dark_oak",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:firewatch_tower_forest",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:firewatch_tower_jungle",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:firewatch_tower_mangrove",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:firewatch_tower_savanna",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:firewatch_tower_swamp",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:firewatch_tower_taiga",
+      "factor": 10
+    },
+    {
+      "structure": "nova_structures:badlands_miner_outpost",
+      "factor": 10
     },
     // add the structures you want to modify in the format:
     // {

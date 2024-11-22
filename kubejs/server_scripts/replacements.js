@@ -18,11 +18,9 @@ ServerEvents.recipes(e => {
         ["minecraft:ender_pearl", "minecraft:ender_eye", { mod: 'waystones'}],
         ["minecraft:purple_dye", "minecraft:purpur_block", { mod: 'waystones'}],
         ["minecraft:emerald", "betterend:eternal_crystal", { id: 'waystones:warp_stone'}],
-        ["minecraft:rabbit_hide", "#c:leather", { id: "minecraft:bundle" }],
         ["minecraft:leather", "minecraft:bundle", { id: "camping:small_backpack" }],
-        ["minecraft:potion", "projectiles:dynamite", { id: "dungeonsnowloading:explosive_barrel" }],
         ["minecraft:bone", "minecraft:goat_horn", { id: "immersive_armors:warrior_helmet" }],
-        ["minecraft:iron_ingot", "minecraft:iron_block", { id: /immersive_armors:heavy_(boots|leggings|chestplate)/ }],
+        ["minecraft:iron_ingot", "minecraft:iron_block", { id: /immersive_armors:heavy_(leggings|chestplate)/ }],
         ["enva:glass_bowl", "minecraft:turtle_helmet", { id: "enva:titanium_coated_glass_bowl" }]
     ].forEach((replacing) => {
         e.replaceInput(replacing[2], replacing[0], replacing[1])

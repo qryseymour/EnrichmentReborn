@@ -29,7 +29,7 @@ ServerEvents.recipes(e => {
     ['hero', 'more_armor_trims:ram_armor_trim_smithing_template'],
     ['golden_horns', 'meadow:goat_cheese_block'],
     ['dark_lord', 'enderzoology:withering_dust'],
-    ['thief', 'silentsdelight:warden_heart'],
+    ['thief', 'minecraft:sculk_shrieker'],
     ['chess_board_knight', 'new_soviet:white_knight'],
     ['sunset_wings', 'xtraarrows:vex_wing'],
   ]
@@ -44,7 +44,7 @@ ServerEvents.recipes(e => {
         {
           A: 'snowballs_plus:evoker_fangs',
           B: 'minecraft:heart_of_the_sea',  
-          C: 'plentyofarmors:ice_shard'
+          C: 'minecraft:prismarine_shard'
         }
       ).id("mosmods1:trident")
     
@@ -126,7 +126,7 @@ ServerEvents.recipes(e => {
       e.shaped(
         Item.of('minecraft:stick', 16), 
         [
-          'A  ',
+          ' A ',
           'A  ',
           '   '
         ],
@@ -173,7 +173,7 @@ ServerEvents.recipes(e => {
           B: 'minecraft:diamond_helmet',
           C: 'minecraft:gold_block',
           D: 'minecraft:netherite_scrap',
-          E: 'minecraft:coal_block'
+          E: 'farmersdelight:dog_food'
         }
       ).id("armoroftheages:anubis_armor_head")
     
@@ -182,13 +182,14 @@ ServerEvents.recipes(e => {
         [
           'ADA',
           'CBC',
-          'CCC'
+          'CEC'
         ],
         {
           A: 'minecraft:lapis_block',
           B: 'minecraft:diamond_chestplate',
           C: 'minecraft:gold_block',
-          D: 'minecraft:netherite_scrap'
+          D: 'minecraft:netherite_scrap',
+          E: 'endrem:evil_eye'
         }
       ).id("armoroftheages:anubis_armor_chest")
     
@@ -197,13 +198,14 @@ ServerEvents.recipes(e => {
         [
           'ABA',
           'CDC',
-          'C C'
+          'CEC'
         ],
         {
           A: 'minecraft:lapis_block',
           B: 'minecraft:diamond_leggings',
           C: 'minecraft:gold_block',
-          D: 'minecraft:netherite_scrap'
+          D: 'minecraft:netherite_scrap',
+          E: 'mcwlights:golden_chain'
         }
       ).id("armoroftheages:anubis_armor_legs")
     
@@ -212,13 +214,14 @@ ServerEvents.recipes(e => {
         [
           'CBC',
           'ADA',
-          '   '
+          'E E'
         ],
         {
           A: 'minecraft:lapis_block',
           B: 'minecraft:diamond_boots',
           C: 'minecraft:gold_block',
-          D: 'minecraft:netherite_scrap'
+          D: 'minecraft:netherite_scrap',
+          E: 'mcwlights:golden_chain'
         }
       ).id("armoroftheages:anubis_armor_feet")
     
@@ -284,19 +287,156 @@ ServerEvents.recipes(e => {
       ).id("armoroftheages:centurion_armor_feet")
     
       e.shaped(
+        Item.of('armoroftheages:holy_armor_head', 1), 
+        [
+          'CDC',
+          'BAB',
+          '   '
+        ],
+        {
+          A: 'minecraft:diamond_helmet',
+          B: 'minecraft:gold_block',
+          C: 'minecraft:iron_block',
+          D: 'simplehats:holyhead'
+        }
+      ).id("armoroftheages:holy_armor_head")
+    
+      e.shaped(
         Item.of('armoroftheages:holy_armor_chest', 1), 
         [
           'BDB',
           'CAC',
+          'CCC'
+        ],
+        {
+          A: 'minecraft:netherite_chestplate',
+          B: 'minecraft:gold_block',
+          C: 'minecraft:iron_block',
+          D: 'endrem:evil_eye'
+        }
+      ).id("armoroftheages:holy_armor_chest")
+    
+      e.shaped(
+        Item.of('armoroftheages:holy_armor_legs', 1), 
+        [
+          'CAC',
+          'CDC',
+          'B B'
+        ],
+        {
+          A: 'minecraft:netherite_leggings',
+          B: 'minecraft:gold_block',
+          C: 'minecraft:iron_block',
+          D: 'botania:holy_cloak'
+        }
+      ).id("armoroftheages:holy_armor_legs")
+    
+      e.shaped(
+        Item.of('armoroftheages:iron_plate_armor_chest', 1), 
+        [
+          'B B',
+          'BAB',
+          'BBB'
+        ],
+        {
+          A: 'minecraft:diamond_chestplate',
+          B: 'minecraft:iron_block'
+        }
+      ).id("armoroftheages:iron_plate_armor_chest")
+    
+      e.shaped(
+        Item.of('armoroftheages:iron_plate_armor_legs', 1), 
+        [
+          'BAB',
+          'BBB',
+          ' C '
+        ],
+        {
+          A: 'minecraft:diamond_leggings',
+          B: 'minecraft:iron_block',
+          C: 'minecraft:red_wool'
+        }
+      ).id("armoroftheages:iron_plate_armor_legs")
+    
+      e.shaped(
+        Item.of('armoroftheages:quetzalcoatl_armor_head', 1), 
+        [
+          'DED',
+          'DAD',
           'BCB'
+        ],
+        {
+          A: 'minecraft:diamond_helmet',
+          B: 'minecraft:gold_ingot',
+          C: 'minecraft:skeleton_skull',
+          D: 'minecraft:feather',
+          E: 'endrem:rogue_eye'
+        }
+      ).id("armoroftheages:quetzalcoatl_armor_head")
+    
+      e.shaped(
+        Item.of('armoroftheages:quetzalcoatl_armor_legs', 1), 
+        [
+          'CAC',
+          'EBE',
+          ' D '
+        ],
+        {
+          A: 'minecraft:diamond_leggings',
+          B: 'minecraft:gold_ingot',
+          C: 'minecraft:bone_block',
+          D: 'minecraft:white_wool',
+          E: 'minecraft:netherite_ingot'
+        }
+      ).id("armoroftheages:quetzalcoatl_armor_legs")
+    
+      e.shaped(
+        Item.of('armoroftheages:quetzalcoatl_armor_feet', 1), 
+        [
+          'BAB',
+          'C C',
+          'D D'
+        ],
+        {
+          A: 'minecraft:diamond_boots',
+          B: 'minecraft:bone_block',
+          C: 'minecraft:feather',
+          D: 'minecraft:netherite_ingot'
+        }
+      ).id("armoroftheages:quetzalcoatl_armor_feet")
+    
+      e.shaped(
+        Item.of('armoroftheages:raijin_armor_chest', 1), 
+        [
+          'CAC',
+          'DBD',
+          'EFE'
         ],
         {
           A: 'minecraft:diamond_chestplate',
           B: 'minecraft:gold_block',
-          C: 'minecraft:iron_block',
-          D: 'mcwholidays:stone_cross'
+          C: 'minecraft:redstone_block',
+          D: 'minecraft:string',
+          E: 'minecraft:netherite_ingot',
+          F: 'vinery:cherry_wine'
         }
-      ).id("armoroftheages:holy_armor_chest")
+      ).id("armoroftheages:raijin_armor_chest")
+    
+      e.shaped(
+        Item.of('armoroftheages:raijin_armor_legs', 1), 
+        [
+          'BAB',
+          'CDC',
+          'CEC'
+        ],
+        {
+          A: 'minecraft:diamond_leggings',
+          B: 'minecraft:red_dye',
+          C: 'minecraft:string',
+          D: 'minecraft:netherite_ingot',
+          E: 'vinery:cherry_wine'
+        }
+      ).id("armoroftheages:raijin_armor_legs")
       
       e.shaped(
           Item.of('botania:enchanted_soil', 1),
@@ -550,7 +690,7 @@ ServerEvents.recipes(e => {
           }
       ).id("botania:knockback_belt")
     
-      let map = [
+      let terrasteelRecipeMap = [
         ["helmet", "spring"],
         ["chestplate", "summer"],
         ["leggings", "autumn"],
@@ -689,6 +829,94 @@ ServerEvents.recipes(e => {
       ).id("immersive_paintings:painting")
     
       e.shaped(
+        Item.of('sophisticatedbackpacks:everlasting_upgrade', 1), 
+        [
+          'ABA',
+          'CFD',
+          'AEA'
+        ],
+        {
+          A: 'minecraft:end_crystal',
+          B: 'mutantmonsters:creeper_shard',
+          C: 'mutantmonsters:endersoul_hand',
+          D: 'mutantmonsters:hulk_hammer',
+          E: 'mutantmonsters:mutant_skeleton_skull',
+          F: 'sophisticatedbackpacks:upgrade_base'
+        }
+      ).id("sophisticatedbackpacks:everlasting_upgrade")
+    
+      e.shaped(
+        Item.of('sophisticatedbackpacks:everlasting_upgrade', 1), 
+        [
+          'ABA',
+          'CFD',
+          'AEA'
+        ],
+        {
+          A: 'minecraft:end_crystal',
+          B: 'minecraft:wither_skeleton_skull',
+          C: 'minecraft:sculk_shrieker',
+          D: 'more_armor_trims:ram_armor_trim_smithing_template',
+          E: 'minecraft:tide_armor_trim_smithing_template',
+          F: 'sophisticatedbackpacks:upgrade_base'
+        }
+      ).id("sophisticatedbackpacks:everlasting_upgrade_2")
+    
+      e.shaped(
+        Item.of('origins:orb_of_origin', 1), 
+        [
+          'ABC',
+          'DEF',
+          'GHI'
+        ],
+        {
+          A: 'mutantmonsters:creeper_shard',
+          B: 'mutantmonsters:endersoul_hand',
+          C: 'mutantmonsters:hulk_hammer',
+          D: 'mutantmonsters:mutant_skeleton_skull',
+          E: 'botania:mana_pearl',
+          F: 'minecraft:wither_skeleton_skull',
+          G: 'minecraft:sculk_shrieker',
+          H: 'more_armor_trims:ram_armor_trim_smithing_template',
+          I: 'minecraft:tide_armor_trim_smithing_template'
+        }
+      ).id("origins:orb_of_origin_2")
+  
+      let eyeToBookMap = [
+        ["wither_eye", "3", "minecraft:blast_protection"],
+        ["nether_eye", "3", "minecraft:fire_protection"],
+        ["cursed_eye", "2", "enderzoology:soulbound"],
+        ["old_eye", "2", "minecraft:soul_speed"],
+        ["rogue_eye", "4", "minecraft:bane_of_arthopods"],
+        ["lost_eye", "2", "minecraft:fortune"],
+        ["cold_eye", "1", "minecraft:frost_walker"],
+        ["black_eye", "2", "minecraft:swift_sneak"],
+        ["corrupted_eye", "3", "minecraft:projectile_protection"],
+        ["evil_eye", "1", "minecraft:mending"],
+        ["guardian_eye", "1", "minecraft:aqua_affinity"],
+        ["magical_eye", "2", "minecraft:lure"],
+        ["witch_eye", "1", "minecraft:fire_aspect"],
+        ["undead_eye", "4", "minecraft:smite"],
+        ["exotic_eye", "2", "minecraft:respiration"],
+        ["cryptic_eye", "2", "minecraft:unbreaking"],
+      ].forEach((item) => {
+        e.shaped(
+          Item.of('minecraft:enchanted_book', `{StoredEnchantments: [{lvl: ${item[1]}s, id:"${item[2]}"}]}`),
+          [
+            'CBC',
+            'CAC',
+            'DDD'
+          ],
+          {
+              A: `endrem:${item[0]}`,
+              B: 'minecraft:book',
+              C: 'botania:mana_pearl',
+              D: 'botania:mana_diamond'
+          }
+        ).id(`${item[0]}_to_designated_enchant`)
+      })
+    
+      e.shaped(
         Item.of('snowballs_plus:healthy_snowball', 40), 
         [
           'AAA',
@@ -768,16 +996,44 @@ ServerEvents.recipes(e => {
       e.shaped(
         Item.of('umbrellas:umbrella', 1), 
         [
-          'AAA',
-          'BCB',
-          ' C '
+          'BBB',
+          'BAB',
+          ' A '
         ],
         {
-          A: 'mcwholidays:pyramid_cobweb',
-          B: 'phantom_armor:phantom_leather',
-          C: 'betterend:leather_wrapped_stick'
+          A: 'betterend:leather_wrapped_stick',
+          B: 'phantom_armor:phantom_leather'
         }
       ).id("umbrellas:umbrella")
+    
+      e.shaped(
+        Item.of('umbrellas:light_blue_umbrella', 1), 
+        [
+          'BBB',
+          'BAB',
+          ' A '
+        ],
+        {
+          A: 'minecraft:stick',
+          B: 'botania:manaweave_cloth'
+        }
+      ).id("umbrellas:umbrella_2")
+    
+      e.shaped(
+        Item.of('potionvapes:vape', 1), 
+        [
+          '  A',
+          'BBE',
+          'BDC'
+        ],
+        {
+          A: 'botania:quartz_blaze',
+          B: 'minecraft:iron_ingot',
+          C: 'new_soviet:belomor_cigarette',
+          D: 'minecraft:redstone',
+          E: 'minecraft:tripwire_hook'
+        }
+      ).id("potionvapes:vape")
     
     e.shapeless('minecraft:gunpowder', ['betterend:crystalline_sulphur', 'meadow:alpine_salt', '#minecraft:coals']).id('mosmods2:shapeless/gunpowder_from_sulfur')
     e.shapeless('4x minecraft:stick', '#regions_unexplored:branches').id('mosmods2:shapeless/stick_from_branch')
