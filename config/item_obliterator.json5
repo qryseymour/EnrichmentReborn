@@ -50,7 +50,8 @@
     "!plentyofarmors:(slime|emerald)_(helmet|chestplate|leggings|boots)",
     "botania:laputa_shard",
     "botania:aura_ring",
-    "botania:aura_ring_greater"
+    "botania:aura_ring_greater",
+    "botania:rosa_arcana"
   ],
   // -----------------------------------------------------------
   // Removes an item if it contains certain nbt tag. If the whole entry (or expression) is present, the item gets removed.

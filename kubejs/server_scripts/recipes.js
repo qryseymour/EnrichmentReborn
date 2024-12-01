@@ -690,6 +690,21 @@ ServerEvents.recipes(e => {
           }
       ).id("botania:knockback_belt")
     
+      e.shaped(
+          Item.of('botania:thunder_sword', 1),
+          [
+            ' BD',
+            'BCB',
+            'AB '
+          ],
+          {
+            A: 'botania:livingwood_twig',
+            B: 'botania:gaia_ingot',
+            C: 'botania:ender_air_bottle',
+            D: Item.of('minecraft:enchanted_book', '{StoredEnchantments: [{lvl: 1s, id:"minecraft:channeling"}]}').weakNBT(),
+          }
+      ).id("botania:thunder_sword")
+    
       let terrasteelRecipeMap = [
         ["helmet", "spring"],
         ["chestplate", "summer"],
@@ -887,7 +902,7 @@ ServerEvents.recipes(e => {
         ["nether_eye", "3", "minecraft:fire_protection"],
         ["cursed_eye", "2", "enderzoology:soulbound"],
         ["old_eye", "2", "minecraft:soul_speed"],
-        ["rogue_eye", "4", "minecraft:bane_of_arthopods"],
+        ["rogue_eye", "4", "minecraft:bane_of_arthropods"],
         ["lost_eye", "2", "minecraft:fortune"],
         ["cold_eye", "1", "minecraft:frost_walker"],
         ["black_eye", "2", "minecraft:swift_sneak"],
@@ -1040,6 +1055,10 @@ ServerEvents.recipes(e => {
     e.shapeless('regions_unexplored:mossy_stone', ['minecraft:stone', '#kubejs:moss']).id('kubejs:shapeless/mossy_stone')
     e.shapeless('minecraft:ender_eye', ['minecraft:ender_pearl', 'minecraft:blaze_powder', 'minecraft:blaze_powder']).id('minecraft:ender_eye')
     e.shapeless('origins:orb_of_origin', ['endrem:old_eye', 'endrem:rogue_eye', 'endrem:nether_eye', 'endrem:cold_eye', 'endrem:lost_eye', 'endrem:corrupted_eye', 'endrem:cursed_eye', 'endrem:black_eye', 'endrem:magical_eye']).id('enrichment:orb_of_origin')
+    e.shapeless('things:recall_potion', [Item.of('minecraft:potion', '{Potion:"mutantmonsters:chemical_x"}').weakNBT(), 'botania:black_lotus']).id('enrichment:recall_potion_1')
+    e.shapeless('2x things:recall_potion', [Item.of('minecraft:potion', '{Potion:"mutantmonsters:chemical_x"}').weakNBT(), Item.of('minecraft:potion', '{Potion:"mutantmonsters:chemical_x"}').weakNBT(), 'botania:black_lotus']).id('enrichment:recall_potion_2')
+    e.shapeless('3x things:recall_potion', [Item.of('minecraft:potion', '{Potion:"mutantmonsters:chemical_x"}').weakNBT(), Item.of('minecraft:potion', '{Potion:"mutantmonsters:chemical_x"}').weakNBT(), Item.of('minecraft:potion', '{Potion:"mutantmonsters:chemical_x"}').weakNBT(), 'botania:black_lotus']).id('enrichment:recall_potion_3')
+    e.shapeless('minecraft:wither_skeleton_skull', ['minecraft:skeleton_skull', 'enderzoology:withering_dust']).id('enrichment:wither_skeleton_skull')
     e.shapeless('plentyofarmors:stardusite_helmet', ['plentyofarmors:stardusite_ingot', 'minecraft:nether_star', 'bosses_of_mass_destruction:ancient_anima', 'mutantmonsters:mutant_skeleton_skull', 'plentyofarmors:amethyst_gem', 'minecraft:echo_shard', '#regions_unexplored:prismarite_crystals', 'betterend:eternal_crystal', 'fantasy_armor:moon_crystal']).id('plentyofarmors:stardusite_helmet')
     e.shapeless('plentyofarmors:stardusite_chestplate', ['plentyofarmors:stardusite_ingot', 'silentsdelight:warden_heart', 'bosses_of_mass_destruction:blazing_eye', 'mutantmonsters:endersoul_hand',  'plentyofarmors:amethyst_gem', 'minecraft:echo_shard', '#regions_unexplored:prismarite_crystals', 'betterend:eternal_crystal', 'fantasy_armor:moon_crystal']).id('plentyofarmors:stardusite_chestplate')
     e.shapeless('plentyofarmors:stardusite_leggings', ['plentyofarmors:stardusite_ingot', 'more_armor_trims:ram_armor_trim_smithing_template', 'bosses_of_mass_destruction:obsidian_heart', 'mutantmonsters:hulk_hammer',  'plentyofarmors:amethyst_gem', 'minecraft:echo_shard', '#regions_unexplored:prismarite_crystals', 'betterend:eternal_crystal', 'fantasy_armor:moon_crystal']).id('plentyofarmors:stardusite_leggings')

@@ -122,6 +122,7 @@ mode = "fancy"
 				villager = true
 				skeleton_horse = true
 				polar_bear = true
+				hopper_minecart = true
 				painting = true
 				wither = true
 
@@ -158,6 +159,7 @@ mode = "fancy"
 				mutant_enderman = true
 				mutant_creeper = true
 				endersoul_fragment = true
+				creeper_minion = true
 				mutant_zombie = true
 				mutant_skeleton = true
 				endersoul_clone = true
@@ -207,6 +209,7 @@ mode = "fancy"
 				lizard = true
 
 			[light_sources.settings.entities.botania]
+				mana_burst = true
 				thorn_chakram = true
 
 			[light_sources.settings.entities.adventurez]
@@ -244,6 +247,9 @@ mode = "fancy"
 			[light_sources.settings.entities.meadow]
 				wooly_cow = true
 				water_buffalo = true
+
+			[light_sources.settings.entities.simplehats]
+				hatdisplay = true
 
 			[light_sources.settings.entities.artifacts]
 				mimic = true

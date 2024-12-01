@@ -375,10 +375,10 @@
 	[server.entityBackpackAdditions]
 		#Chance of an entity spawning with Backpack
 		#Range: 0.0 ~ 1.0
-		chance = 0.01
+		chance = 0.0
 		#Chance increase per looting level of mob dropping backpack
 		#Range: 0.0 ~ 0.3
-		lootingChanceIncreasePerLevel = 0.15
+		lootingChanceIncreasePerLevel = 0.0
 		#Determines whether backpack drops to fake players if killed by them in addition to real ones that it always drops to
 		dropToFakePlayers = false
 		#Turns on/off buffing the entity that wears backpack with potion effects. These are scaled based on how much loot is added.

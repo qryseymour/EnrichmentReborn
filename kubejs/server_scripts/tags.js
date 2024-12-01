@@ -268,6 +268,7 @@ ServerEvents.tags('item', event => {
         'minecraft:golden_apple',
         'minecraft:honey_bottle',
         'minecraft:suspicious_stew',
+        'brewery:gingerbread',
         /(bakery|beachparty|candlelight|farmersdelight):chocolate_(.*_slice|truffle|milkshake|icecream|mousse|pie_slice)$/
     ])
 

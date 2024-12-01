@@ -38,7 +38,8 @@ global.fullRemovals = [
     /plentyofarmors:(slime|emerald)_(helmet|chestplate|leggings|boots)/,
     "botania:laputa_shard",
     "botania:aura_ring",
-    "botania:aura_ring_greater"
+    "botania:aura_ring_greater",
+    "botania:rosa_arcana"
 ]
 
 ItemEvents.modification(event => {
