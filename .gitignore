@@ -50,6 +50,14 @@
 /showdown/
 /moddata
 /showdown-backup/
+/.binkload/
+/.cache/
+/.fabric/
+/.mixinout/
+/.persistent/
+/immersive_paintings_cache/
+/pfm/
+/rrp_debug/
 
 # root files
 /knownkeys.txt
@@ -68,6 +76,9 @@
 /fabricloader.log
 resourcepacks/Quark Programmer Art.zip
 emi.json
+irisUpdateInfo.json
+servers.dat_old
+polymer-resourcepack.zip
 
 # launcher-related
 /.curseclient
