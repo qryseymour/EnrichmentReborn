@@ -91,6 +91,9 @@
         "coremods/": true,
         "texturepacks/": true,
         "**/minecraftinstance.json": true,
-        "**/polymer-resourcepack.zip": true
+        "**/polymer-resourcepack.zip": true,
+        "config/sodium-fingerprint.json": true,
+        ".mixin.out/": true,
+        "att-debug/": true
     }
 }

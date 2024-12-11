@@ -13,6 +13,7 @@
 /config/embeddium-fingerprint.json
 /config/mc2discord.toml
 /config/cpm.json
+/config/sodium-fingerprint.json
 /.vscode/probe.class-definitions.json
 /.vscode/probe.code-snippets
 /.vscode/probe.doc-schema.json
@@ -21,8 +22,6 @@
 /.vscode/probe.registry-definitions.json
 /.vscode/probe*
 /kubejs/probe/
-/.mixin.out/class/net/minecraft/
-/.mixin.out/class/net/minecraft/*
 /config/lambdynlights.toml
 /config/rare-ice.properties
 # /kubejs/config/client.properties
@@ -53,11 +52,12 @@
 /.binkload/
 /.cache/
 /.fabric/
-/.mixinout/
+/.mixin.out/
 /.persistent/
 /immersive_paintings_cache/
 /pfm/
 /rrp_debug/
+/att-debug/
 
 # root files
 /knownkeys.txt
