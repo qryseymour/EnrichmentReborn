@@ -5,7 +5,7 @@
   },
   "crystalRespawnTimeModifier": {
     "desc:": "Modifies crystal respawn time, 0.5 = spawns twice as fast, 2 = twice as slow. default:1.0",
-    "crystalRespawnTimeModifier": 1.0
+    "crystalRespawnTimeModifier": 1.5
   },
   "lightningExplosionDensity": {
     "desc:": "Modifies lightning and explosion density, 0.5 = half as many, 2 = twice as many. default:1.0",
@@ -21,19 +21,19 @@
   },
   "dragonHealthModifier": {
     "desc:": "Sets the dragon health modifier: default:1.0",
-    "dragonHealthModifier": 1.0
+    "dragonHealthModifier": 2.5
   },
   "dragonDamageModifier": {
     "desc:": "Sets the dragon damage modifier: default:1.0",
-    "dragonDamageModifier": 1.0
+    "dragonDamageModifier": 1.66
   },
   "mobSpawnAmountModifier": {
     "desc:": "Sets the mob spawn amount modifier: default:1.0",
-    "mobSpawnAmountModifier": 1.0
+    "mobSpawnAmountModifier": 3.0
   },
   "dragonXPModifier": {
     "desc:": "Sets the XP drop modifier: default:1.0",
-    "dragonXPModifier": 1.0
+    "dragonXPModifier": 10.0
   },
   "printDragonPhases": {
     "desc:": "Prints the dragon phase in chat if enabled: default:false",
@@ -47,19 +47,47 @@
   "spawnoncrystaldestroy": {
     "desc:": "List of mobs spawning when a crystal is destroyed at range, intended to be flying or ranged to close the gap: e.g. format :  [\"minecraft:zombie\", \"minecraft:creeper\"]",
     "spawnoncrystaldestroy": [
-      "minecraft:phantom"
+      "minecraft:phantom",
+      "minecraft:blaze",
+      "minecraft:ghast",
+      "minecraft:shulker",
+      "minecraft:vex",
+      "bygonenether:wex",
+      "dungeonnowloading:hollow",
+      "mutantmonsters:mutant_creeper",
+      "minecraft:wither"
     ]
   },
   "spawnoncrystalrespawn": {
     "desc:": "List of mobs spawning on crystal respawn, intended to be ranged to ward of players from a distance: e.g. format :  [\"minecraft:zombie\", \"minecraft:creeper\"]",
     "spawnoncrystalrespawn": [
-      "minecraft:blaze"
+      "minecraft:witch",
+      "minecraft:stray",
+      "enderzoology:fallen_knight",
+      "enderzoology:wither_witch",
+      "mutantmonsters:mutant_skeleton",
+      "variantsandventures:murk",
+      "variantsandventures:verdant"
     ]
   },
   "spawnwhilelanded": {
     "desc:": "List of mobs spawning while the dragon is sitting in the middle, intended to be melee and not vulnerable to ranged: e.g. format :  [\"minecraft:zombie\", \"minecraft:creeper\"]",
     "spawnwhilelanded": [
-      "minecraft:enderman"
+      "minecraft:creeper",
+      "minecraft:ravager",
+      "minecraft:vindicator",
+      "minecraft:wither_skeleton",
+      "bygonenether:warped_enderman",
+      "bygonenether:wraither",
+      "bygonenether:corpor",
+      "bygonenether:wither_skeleton_knight",
+      "dungeonnowloading:spawner_carrier",
+      "enderzoology:concussion_creeper",
+      "enderzoology:infested_zombie",
+      "enderzoology:enderminy",
+      "mutantmonsters:mutant_zombie",
+      "mutantmonsters:mutant_enderman",
+      "spider_caves:black_recluse"
     ]
   },
   "crystalPendingRespawns": {

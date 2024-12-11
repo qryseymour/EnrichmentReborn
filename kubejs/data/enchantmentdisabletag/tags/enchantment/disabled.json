@@ -2,6 +2,7 @@
     "replace": false,
     "values": [
       "origins:water_protection",
-      "moborigins:heat_protection"
+      "moborigins:heat_protection",
+      "moborigins:ground_spikes"
     ]
   }

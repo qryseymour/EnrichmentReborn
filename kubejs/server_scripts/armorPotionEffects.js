@@ -58,12 +58,14 @@ PlayerEvents.tick(event => {
     if (!(player.age % 10 === 0)) {
         return
     }
-    let potion = event.player.potionEffects
-    if (player.mainHandItem?.id == "bosses_of_mass_destruction:earthdive_spear") {
-      potion.add("beaconoverhaul:long_reach", 20, 0, false, false)
+    var seenCredits = player.nbt.seenCredits
+    if ((seenCredits || seenCredits == 1 || seenCredits == "1b") && !player.stages.has('gotHardCatalyst')) {
+      player.stages.add('gotHardCatalyst')
+      player.give("things:hardening_catalyst")
     }
+    let potion = event.player.potionEffects
     if (player.headArmorItem?.id == "mutantmonsters:mutant_skeleton_skull") {
-      potion.add("minecraft:night_vision", 100, 0, true, false)
+      potion.add("minecraft:night_vision", 300, 0, true, false)
       potion.add("minecraft:water_breathing", 100, 0, true, false)
     }
     if (player.chestArmorItem?.id == "mutantmonsters:mutant_skeleton_chestplate") {

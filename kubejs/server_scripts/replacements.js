@@ -21,7 +21,8 @@ ServerEvents.recipes(e => {
         ["minecraft:leather", "minecraft:bundle", { id: "camping:small_backpack" }],
         ["minecraft:bone", "minecraft:goat_horn", { id: "immersive_armors:warrior_helmet" }],
         ["minecraft:iron_ingot", "minecraft:iron_block", { id: /immersive_armors:heavy_(leggings|chestplate)/ }],
-        ["enva:glass_bowl", "minecraft:turtle_helmet", { id: "enva:titanium_coated_glass_bowl" }]
+        ["enva:glass_bowl", "minecraft:turtle_helmet", { id: "enva:titanium_coated_glass_bowl" }],
+        ["minecraft:iron_ingot", "betterend:terminite_ingot", { id: "end_reborn:remnant_ingot" }]
     ].forEach((replacing) => {
         e.replaceInput(replacing[2], replacing[0], replacing[1])
     })

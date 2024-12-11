@@ -39,7 +39,9 @@ global.fullRemovals = [
     "botania:laputa_shard",
     "botania:aura_ring",
     "botania:aura_ring_greater",
-    "botania:rosa_arcana"
+    "botania:rosa_arcana",
+    /end_reborn:(end_stone|popped_chorus)_(sword|axe|pickaxe|hoe|shovel)/,
+    /end_reborn:(gilded|reinforced|forgotten|fractured|sculk|lost)_steel.*/
 ]
 
 ItemEvents.modification(event => {

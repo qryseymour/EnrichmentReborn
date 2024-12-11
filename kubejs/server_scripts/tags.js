@@ -69,6 +69,15 @@ ServerEvents.tags('item', event => {
         "fantasy_armor:chess_board_knight",
         "fantasy_armor:dark_lord",
         "fantasy_armor:sunset_wings",
+        "fantasy_armor:golden_execution",
+        "fantasy_armor:dark_cover",
+        "fantasy_armor:gilded_hunt",
+        "fantasy_armor:redeemer",
+        "fantasy_armor:twinned",
+        "fantasy_armor:spark_of_dawn",
+        "fantasy_armor:lady_maria",
+        "fantasy_armor:forgotten_trace",
+        "fantasy_armor:fog_guard",
         "plentyofarmors:frozen_diamond",
         "plentyofarmors:echo_shard",
         "plentyofarmors:amethyst",
@@ -81,6 +90,7 @@ ServerEvents.tags('item', event => {
 
     let end_game_sets = [
         "betterend:crystalite",
+        "end_reborn:remnant",
         "mythicupgrades:ruby",
         "mythicupgrades:topaz",
         "mythicupgrades:peridot",
@@ -137,6 +147,7 @@ ServerEvents.tags('item', event => {
         /mythicupgrades:(ruby|topaz|peridot|jade|aquamarine|sapphire|ametrine)_(helmet|chestplate|leggings|boots|axe|sword|pickaxe|shovel|hoe)/,
         /gildedarmor:gilded_.*_(helmet|chestplate|leggings|boots)/,
         /betterend:crystalite_(helmet|chestplate|leggings|boots)/,
+        /end_reborn:remnant_(helmet|chestplate|leggings|boots)/,
         /plentyofarmors:(ender_netherite|marine_diamond|stardusite)_(helmet|chestplate|leggings|boots)/,
         /fantasy_armor:.*_(helmet|chestplate|leggings|boots)/,
         /armoroftheages:(anubis|centurion)_armor_(helmet|chestplate|leggings|boots)/,
@@ -269,7 +280,8 @@ ServerEvents.tags('item', event => {
         'minecraft:honey_bottle',
         'minecraft:suspicious_stew',
         'brewery:gingerbread',
-        /(bakery|beachparty|candlelight|farmersdelight):chocolate_(.*_slice|truffle|milkshake|icecream|mousse|pie_slice)$/
+        /(bakery|beachparty|candlelight|farmersdelight):chocolate_(.*_slice|truffle|milkshake|icecream|mousse|pie_slice)$/,
+        /mythicupgrades:.*_potion$/
     ])
 
     event.add('enrichment:pillars', [
@@ -339,6 +351,7 @@ ServerEvents.tags('item', event => {
         'herbalbrews:herbalbrews_standard',
         'meadow:meadow_standard',
         'vinery:vinery_standard',
+        'brewery:brewery_standard'
     ])
 
     event.add('enrichment:end_game_pick', [

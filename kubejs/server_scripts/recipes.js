@@ -31,7 +31,16 @@ ServerEvents.recipes(e => {
     ['dark_lord', 'enderzoology:withering_dust'],
     ['thief', 'minecraft:sculk_shrieker'],
     ['chess_board_knight', 'new_soviet:white_knight'],
-    ['sunset_wings', 'xtraarrows:vex_wing'],
+    ['sunset_wings', 'xtraarrows:diamond_vexing_arrow'],
+    ['golden_execution', 'mutantmonsters:hulk_hammer'],
+    ['dark_cover', 'farmersdelight:squid_ink_pasta'],
+    ['gilded_hunt', 'gildedarmor:gilding_upgrade_smithing_template'],
+    ['redeemer', 'botania:gaia_spreader'],
+    ['twinned', 'farmersdelight:dog_food'],
+    ['spark_of_dawn', 'botania:spark_changer'],
+    ['lady_maria', 'xtraarrows:diamond_life_steal_arrow'],
+    ['forgotten_trace', 'mutantmonsters:mutant_skeleton_limb'],
+    ['fog_guard', 'mythicupgrades:aquamarine_potion'],
   ]
 
     e.shaped(
@@ -1004,7 +1013,7 @@ ServerEvents.recipes(e => {
           F: 'mythicupgrades:sapphire_upgrade_smithing_template',
           G: 'mythicupgrades:ametrine_upgrade_smithing_template',
           H: 'minecraft:netherite_upgrade_smithing_template',
-          I: 'mythicupgrades:necoium_ingot'
+          I: 'botania:gaia_ingot'
         }
       ).id("plentyofarmors:stardusite_ingot")
     
@@ -1049,6 +1058,8 @@ ServerEvents.recipes(e => {
           E: 'minecraft:tripwire_hook'
         }
       ).id("potionvapes:vape")
+      
+      e.remove('things:hardening_catalyst')
     
     e.shapeless('minecraft:gunpowder', ['betterend:crystalline_sulphur', 'meadow:alpine_salt', '#minecraft:coals']).id('mosmods2:shapeless/gunpowder_from_sulfur')
     e.shapeless('4x minecraft:stick', '#regions_unexplored:branches').id('mosmods2:shapeless/stick_from_branch')
@@ -1059,6 +1070,23 @@ ServerEvents.recipes(e => {
     e.shapeless('2x things:recall_potion', [Item.of('minecraft:potion', '{Potion:"mutantmonsters:chemical_x"}').weakNBT(), Item.of('minecraft:potion', '{Potion:"mutantmonsters:chemical_x"}').weakNBT(), 'botania:black_lotus']).id('enrichment:recall_potion_2')
     e.shapeless('3x things:recall_potion', [Item.of('minecraft:potion', '{Potion:"mutantmonsters:chemical_x"}').weakNBT(), Item.of('minecraft:potion', '{Potion:"mutantmonsters:chemical_x"}').weakNBT(), Item.of('minecraft:potion', '{Potion:"mutantmonsters:chemical_x"}').weakNBT(), 'botania:black_lotus']).id('enrichment:recall_potion_3')
     e.shapeless('minecraft:wither_skeleton_skull', ['minecraft:skeleton_skull', 'enderzoology:withering_dust']).id('enrichment:wither_skeleton_skull')
+    let mythicMap = [
+      ["ruby", "meadow:meadow_standard"],
+      ["topaz", "candlelight:candlelight_standard"],
+      ["peridot", "vinery:vinery_standard"],
+      ["jade", "farm_and_charm:scarecrow"],
+      ["sapphire", "bloomingnature:bloomingnature_standard"],
+      ["aquamarine", "bakery:bakery_standard"],
+      ["ametrine", "herbalbrews:herbalbrews_standard"]
+    ].forEach((mythicIndex) => {
+      e.shapeless(`mythicupgrades:${mythicIndex[0]}_ingot`, [`mythicupgrades:${mythicIndex[0]}`, `mythicupgrades:${mythicIndex[0]}`, `mythicupgrades:${mythicIndex[0]}`, `mythicupgrades:${mythicIndex[0]}`, 'mythicupgrades:necoium_ingot', 'mythicupgrades:necoium_ingot', 'mythicupgrades:necoium_ingot', 'mythicupgrades:necoium_ingot', `${mythicIndex[1]}`]).id(`mythicupgrades:${mythicIndex[0]}_ingot`)
+      toolTypes.forEach((item) => {
+        e.smithing(`mythicupgrades:${mythicIndex[0]}_${item}`, `mythicupgrades:${mythicIndex[0]}_upgrade_smithing_template`, `end_reborn:remnant_${item}`, `mythicupgrades:${mythicIndex[0]}_ingot`).id(`mythicupgrades:remnant_to_${mythicIndex[0]}_${item}_smithing`)
+      })
+      armorTypes.forEach((item) => {
+        e.smithing(`mythicupgrades:${mythicIndex[0]}_${item}`, `mythicupgrades:${mythicIndex[0]}_upgrade_smithing_template`, `end_reborn:remnant_${item}`, `mythicupgrades:${mythicIndex[0]}_ingot`).id(`mythicupgrades:remnant_to_${mythicIndex[0]}_${item}_smithing`)
+      })
+    })
     e.shapeless('plentyofarmors:stardusite_helmet', ['plentyofarmors:stardusite_ingot', 'minecraft:nether_star', 'bosses_of_mass_destruction:ancient_anima', 'mutantmonsters:mutant_skeleton_skull', 'plentyofarmors:amethyst_gem', 'minecraft:echo_shard', '#regions_unexplored:prismarite_crystals', 'betterend:eternal_crystal', 'fantasy_armor:moon_crystal']).id('plentyofarmors:stardusite_helmet')
     e.shapeless('plentyofarmors:stardusite_chestplate', ['plentyofarmors:stardusite_ingot', 'silentsdelight:warden_heart', 'bosses_of_mass_destruction:blazing_eye', 'mutantmonsters:endersoul_hand',  'plentyofarmors:amethyst_gem', 'minecraft:echo_shard', '#regions_unexplored:prismarite_crystals', 'betterend:eternal_crystal', 'fantasy_armor:moon_crystal']).id('plentyofarmors:stardusite_chestplate')
     e.shapeless('plentyofarmors:stardusite_leggings', ['plentyofarmors:stardusite_ingot', 'more_armor_trims:ram_armor_trim_smithing_template', 'bosses_of_mass_destruction:obsidian_heart', 'mutantmonsters:hulk_hammer',  'plentyofarmors:amethyst_gem', 'minecraft:echo_shard', '#regions_unexplored:prismarite_crystals', 'betterend:eternal_crystal', 'fantasy_armor:moon_crystal']).id('plentyofarmors:stardusite_leggings')
