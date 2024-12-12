@@ -22,6 +22,28 @@
         "value": 2048
       }
     },
+    "zenith_attributes:arrow_velocity": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "additionalentityattributes:generic.lung_capacity": {
+      "enabled": false,
+      "min": {
+        "default": -40000,
+        "value": -40000
+      },
+      "max": {
+        "default": 40000,
+        "value": 40000
+      }
+    },
     "amethyst_core:spell_mana_cost": {
       "enabled": false,
       "min": {
@@ -44,6 +66,39 @@
         "value": 100
       }
     },
+    "additionalentityattributes:player.bonus_rare_loot_rolls": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 128,
+        "value": 128
+      }
+    },
+    "additionalentityattributes:player.collection_range": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 64,
+        "value": 64
+      }
+    },
+    "additionalentityattributes:generic.water_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "obscure_api:resilience": {
       "enabled": false,
       "min": {
@@ -53,6 +108,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "additionalentityattributes:player.dig_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "obscure_api:regeneration": {
@@ -121,6 +187,17 @@
         "value": 10
       }
     },
+    "zenith_attributes:healing_received": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
     "porting_lib:entity_gravity": {
       "enabled": false,
       "min": {
@@ -143,6 +220,17 @@
         "value": 1024
       }
     },
+    "zenith_attributes:cold_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
     "additionalentityattributes:lava_visibility": {
       "enabled": false,
       "min": {
@@ -163,6 +251,39 @@
       "max": {
         "default": 0.8,
         "value": 0.8
+      }
+    },
+    "additionalentityattributes:player.water_visibility": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "additionalentityattributes:player.lava_visibility": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "additionalentityattributes:player.dropped_experience": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "obscure_api:healing_power": {
@@ -209,6 +330,17 @@
         "value": 10
       }
     },
+    "additionalentityattributes:generic.magic_protection": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "stepheightentityattribute:stepheight": {
       "enabled": false,
       "min": {
@@ -244,6 +376,17 @@
     },
     "minecraft:zombie.spawn_reinforcements": {
       "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "zenith_attributes:dodge_chance": {
+      "enabled": false,
       "min": {
         "default": 0,
         "value": 0
@@ -330,6 +473,17 @@
         "value": 32
       }
     },
+    "additionalentityattributes:player.bonus_loot_count_rolls": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 128,
+        "value": 128
+      }
+    },
     "amethyst_core:spell_range": {
       "enabled": false,
       "min": {
@@ -350,6 +504,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "zenith_attributes:armor_shred": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2,
+        "value": 2
       }
     },
     "reach-entity-attributes:reach": {
@@ -374,7 +539,40 @@
         "value": 32
       }
     },
+    "additionalentityattributes:generic.lava_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "zenith_attributes:overheal": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "additionalentityattributes:water_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "zenith_attributes:current_hp_damage": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -394,6 +592,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "zenith_attributes:draw_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 4,
+        "value": 4
       }
     },
     "minecraft:generic.attack_speed": {
@@ -484,6 +693,28 @@
         "value": 1024
       }
     },
+    "zenith_attributes:ghost_health": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
+    "zenith_attributes:prot_shred": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "amethyst_core:spell_experience": {
       "enabled": false,
       "min": {
@@ -495,6 +726,28 @@
         "value": 32
       }
     },
+    "zenith_attributes:fire_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
+    "additionalentityattributes:generic.jump_height": {
+      "enabled": false,
+      "min": {
+        "default": -1024,
+        "value": -1024
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "amethyst_core:spell_cooldown": {
       "enabled": false,
       "min": {
@@ -504,6 +757,17 @@
       "max": {
         "default": 1.99,
         "value": 1.99
+      }
+    },
+    "zenith_attributes:prot_pierce": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 34,
+        "value": 34
       }
     },
     "terraqueous:deathfruit_addiction": {
@@ -519,6 +783,28 @@
     },
     "minecraft:generic.movement_speed": {
       "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "zenith_attributes:armor_pierce": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1000,
+        "value": 1000
+      }
+    },
+    "additionalentityattributes:generic.mob_detection_range": {
+      "enabled": false,
       "min": {
         "default": 0,
         "value": 0
@@ -548,6 +834,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "zenith_attributes:crit_chance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "minecraft:generic.max_health": {
@@ -583,6 +880,17 @@
         "value": 1
       }
     },
+    "zenith_attributes:mining_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "additionalentityattributes:bonus_rare_loot_rolls": {
       "enabled": false,
       "min": {
@@ -614,6 +922,17 @@
       "max": {
         "default": 2,
         "value": 2
+      }
+    },
+    "zenith_attributes:arrow_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "amethyst_core:magic_resistance": {
@@ -649,6 +968,17 @@
         "value": 1024
       }
     },
+    "additionalentityattributes:player.critical_bonus_damage": {
+      "enabled": false,
+      "min": {
+        "default": -1,
+        "value": -1
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "amethyst_core:spell_damage": {
       "enabled": false,
       "min": {
@@ -658,6 +988,17 @@
       "max": {
         "default": 32,
         "value": 32
+      }
+    },
+    "zenith_attributes:life_steal": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     }
   }
