@@ -350,8 +350,7 @@ ServerEvents.tags('item', event => {
         'candlelight:candlelight_standard',
         'herbalbrews:herbalbrews_standard',
         'meadow:meadow_standard',
-        'vinery:vinery_standard',
-        'brewery:brewery_standard'
+        'vinery:vinery_standard'
     ])
 
     event.add('enrichment:end_game_pick', [

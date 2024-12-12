@@ -17,7 +17,7 @@ bookOffer = true
 cooldown = 30
 radius = 5
 [explosiveOptions]
-isEnabled = true
+isEnabled = false
 randomSelection = true
 bookOffer = true
 cooldown = 60
@@ -58,7 +58,7 @@ bookOffer = true
 cooldown = 60
 radius = 5
 [soulboundOptions]
-isEnabled = true
+isEnabled = false
 randomSelection = false
 bookOffer = true
 isTreasure = true

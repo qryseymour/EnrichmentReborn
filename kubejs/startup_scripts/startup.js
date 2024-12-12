@@ -41,7 +41,9 @@ global.fullRemovals = [
     "botania:aura_ring_greater",
     "botania:rosa_arcana",
     /end_reborn:(end_stone|popped_chorus)_(sword|axe|pickaxe|hoe|shovel)/,
-    /end_reborn:(gilded|reinforced|forgotten|fractured|sculk|lost)_steel.*/
+    /end_reborn:(gilded|reinforced|forgotten|fractured|sculk|lost)_steel.*/,
+    "zenith:gem",
+    "zenith:gem_cutting_table"
 ]
 
 ItemEvents.modification(event => {

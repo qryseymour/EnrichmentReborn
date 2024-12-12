@@ -13,23 +13,23 @@
     // example of the mansion being doubled in rarity (the mod's default)
     {
       "structure": "brewery:brewfest_tent",
-      "factor": 10
+      "factor": 5
     },
     {
       "structure": "bakery:bakery",
-      "factor": 10
+      "factor": 5
     },
     {
       "structure": "bloomingnature:cottage",
-      "factor": 10
+      "factor": 5
     },
     {
       "structure": "bloomingnature:little_house",
-      "factor": 10
+      "factor": 5
     },
     {
       "structure": "meadow:chapel",
-      "factor": 10
+      "factor": 5
     },
     {
       "structure": "minecraft:shipwreck",
@@ -173,43 +173,43 @@
     },
     {
       "structure": "nova_structures:firewatch_tower_birch",
-      "factor": 10
+      "factor": 5
     },
     {
       "structure": "nova_structures:firewatch_tower_cherry",
-      "factor": 10
+      "factor": 5
     },
     {
       "structure": "nova_structures:firewatch_tower_dark_oak",
-      "factor": 10
+      "factor": 5
     },
     {
       "structure": "nova_structures:firewatch_tower_forest",
-      "factor": 10
+      "factor": 5
     },
     {
       "structure": "nova_structures:firewatch_tower_jungle",
-      "factor": 10
+      "factor": 5
     },
     {
       "structure": "nova_structures:firewatch_tower_mangrove",
-      "factor": 10
+      "factor": 5
     },
     {
       "structure": "nova_structures:firewatch_tower_savanna",
-      "factor": 10
+      "factor": 5
     },
     {
       "structure": "nova_structures:firewatch_tower_swamp",
-      "factor": 10
+      "factor": 5
     },
     {
       "structure": "nova_structures:firewatch_tower_taiga",
-      "factor": 10
+      "factor": 5
     },
     {
       "structure": "nova_structures:badlands_miner_outpost",
-      "factor": 10
+      "factor": 5
     },
     // add the structures you want to modify in the format:
     // {

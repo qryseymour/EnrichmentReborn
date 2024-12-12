@@ -3,6 +3,27 @@
     "values": [
       "origins:water_protection",
       "moborigins:heat_protection",
-      "moborigins:ground_spikes"
+      "moborigins:ground_spikes",
+      "qu-enchantments:lucky_miner",
+      "qu-enchantments:lightning_bound",
+      "alessandrvenchantments:glower",
+      "alessandrvenchantments:explosive",
+      "alessandrvenchantments:soulbound",
+      "cenchants:zap",
+      "enchantmentsplus:blazewalker",
+      "enchantmentsplus:flashforge",
+      "enchantmentsplus:frostbite",
+      "enchantmentsplus:stormstrike",
+      "enchantmentsplus:thunderlord",
+      "extra_enchantments:enigma_resonator",
+      "extra_enchantments:hellwalker",
+      "extra_enchantments:lifesteal",
+      "extra_enchantments:illagers_bane",
+      "incantationem:forging_touch",
+      "majruszsenchantments:smelter",
+      "reenchantments:vampirism",
+      "spellbound:hearty",
+      "spellbound:priming",
+      "azurelib:incendiaryenchantment"
     ]
   }

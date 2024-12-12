@@ -20,7 +20,6 @@ LootJS.modifiers(e => {
     e.addLootTableModifier('betterend:chests/end_village_template_loot').addLoot('betterend:ender_dust')
     e.addLootTableModifier('betterdeserttemples:chests/pharaoh_hidden').addLoot('endrem:old_eye')
     e.addLootTableModifier('betterjungletemples:chests/treasure').addLoot('endrem:rogue_eye')
-    e.addLootTableModifier('betterfortresses:chests/puzzle').addLoot('endrem:nether_eye')
     e.addLootTableModifier('minecraft:chests/illager_mansion/map_chest').addLoot('endrem:magical_eye')
     e.addLootTableModifier('nova_structures:chests/stray_fort_tresure').addLoot('endrem:cold_eye')
     e.addLootTableModifier('betterjungletemples:chests/campsite').randomChance(0.1).addLoot('mythicupgrades:peridot_upgrade_smithing_template')

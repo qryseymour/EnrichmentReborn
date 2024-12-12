@@ -334,6 +334,21 @@
       "moborigins:strider_shake": true,
       "moborigins:warped_fungus_eater": true,
       "custom_origins:updated_water_vulnerability": true
+    },
+    "xolotlkwt:enderxolotl": {
+      "enabled": true,
+      "origins:water_breathing": true,
+      "xolotlkwt:enderbubble": true,
+      "xolotlkwt:unique_eyes": true,
+      "xolotlkwt:aqua_affinity": true,
+      "xolotlkwt:playdead": true,
+      "xolotlkwt:id": true,
+      "origins:fragile": true,
+      "origins:pumpkin_hate": true,
+      "origins:aquatic": true,
+      "origins:conduit_power_on_land": true,
+      "origins:air_from_potions": true,
+      "origins:ender_particles": true
     }
   }
 }
