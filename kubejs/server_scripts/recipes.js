@@ -33,10 +33,10 @@ ServerEvents.recipes(e => {
     ['chess_board_knight', 'new_soviet:white_knight'],
     ['sunset_wings', 'xtraarrows:diamond_vexing_arrow'],
     ['golden_execution', 'mutantmonsters:hulk_hammer'],
-    ['dark_cover', 'farmersdelight:squid_ink_pasta'],
+    ['dark_cover', 'galosphere:shadow_frame'],
     ['gilded_hunt', 'gildedarmor:gilding_upgrade_smithing_template'],
     ['redeemer', 'botania:gaia_spreader'],
-    ['twinned', 'farmersdelight:dog_food'],
+    ['twinned', 'farm_and_charm:dog_food'],
     ['spark_of_dawn', 'botania:spark_changer'],
     ['lady_maria', 'xtraarrows:diamond_life_steal_arrow'],
     ['forgotten_trace', 'mutantmonsters:mutant_skeleton_limb'],
@@ -182,7 +182,7 @@ ServerEvents.recipes(e => {
           B: 'minecraft:diamond_helmet',
           C: 'minecraft:gold_block',
           D: 'minecraft:netherite_scrap',
-          E: 'farmersdelight:dog_food'
+          E: 'farm_and_charm:dog_food'
         }
       ).id("armoroftheages:anubis_armor_head")
     
@@ -878,7 +878,7 @@ ServerEvents.recipes(e => {
         ],
         {
           A: 'minecraft:end_crystal',
-          B: 'minecraft:wither_skeleton_skull',
+          B: 'minecraft:nether_star',
           C: 'minecraft:sculk_shrieker',
           D: 'more_armor_trims:ram_armor_trim_smithing_template',
           E: 'minecraft:tide_armor_trim_smithing_template',
@@ -905,91 +905,19 @@ ServerEvents.recipes(e => {
           I: 'minecraft:tide_armor_trim_smithing_template'
         }
       ).id("origins:orb_of_origin_2")
-  
-      let eyeToBookMap = [
-        ["wither_eye", "3", "minecraft:blast_protection"],
-        ["nether_eye", "3", "minecraft:fire_protection"],
-        ["cursed_eye", "2", "enderzoology:soulbound"],
-        ["old_eye", "2", "minecraft:soul_speed"],
-        ["rogue_eye", "4", "minecraft:bane_of_arthropods"],
-        ["lost_eye", "2", "minecraft:fortune"],
-        ["cold_eye", "1", "minecraft:frost_walker"],
-        ["black_eye", "2", "minecraft:swift_sneak"],
-        ["corrupted_eye", "3", "minecraft:projectile_protection"],
-        ["evil_eye", "1", "minecraft:mending"],
-        ["guardian_eye", "1", "minecraft:aqua_affinity"],
-        ["magical_eye", "2", "minecraft:lure"],
-        ["witch_eye", "1", "minecraft:fire_aspect"],
-        ["undead_eye", "4", "minecraft:smite"],
-        ["exotic_eye", "2", "minecraft:respiration"],
-        ["cryptic_eye", "2", "minecraft:unbreaking"],
-      ].forEach((item) => {
-        e.shaped(
-          Item.of('minecraft:enchanted_book', `{StoredEnchantments: [{lvl: ${item[1]}s, id:"${item[2]}"}]}`),
-          [
-            'CBC',
-            'CAC',
-            'DDD'
-          ],
-          {
-              A: `endrem:${item[0]}`,
-              B: 'minecraft:book',
-              C: 'botania:mana_pearl',
-              D: 'botania:mana_diamond'
-          }
-        ).id(`${item[0]}_to_designated_enchant`)
-      })
-    
-      e.shaped(
-        Item.of('snowballs_plus:healthy_snowball', 40), 
-        [
-          'AAA',
-          'ABA',
-          'AAA'
-        ],
-        {
-          A: 'minecraft:snowball',
-          B: '#enrichment:good_heart'
-        }
-      ).id("snowballs_plus:healthy_snowball")
-    
-      e.shaped(
-        Item.of('snowballs_plus:bloodthirsty_snowball', 64), 
-        [
-          'AAA',
-          'ABA',
-          'AAA'
-        ],
-        {
-          A: 'minecraft:snowball',
-          B: '#enrichment:evil_heart'
-        }
-      ).id("snowballs_plus:bloodthirsty_snowball")
-    
-      e.shaped(
-        Item.of('snowballs_plus:fangs_snowball', 40), 
-        [
-          'AAA',
-          'ABA',
-          'AAA'
-        ],
-        {
-          A: 'minecraft:snowball',
-          B: 'snowballs_plus:evoker_fangs'
-        }
-      ).id("snowballs_plus:fangs_snowball")
     
       e.shaped(
         Item.of('plentyofarmors:marine_diamond', 1), 
         [
-          '   ',
+          ' D ',
           'CBC',
           ' A '
         ],
         {
           A: 'minecraft:diamond_block',
           B: 'minecraft:heart_of_the_sea',
-          C: 'minecraft:sea_lantern'
+          C: 'minecraft:sea_lantern',
+          D: 'minecraft:conduit'
         }
       ).id("plentyofarmors:marine_diamond")
     
@@ -1016,32 +944,6 @@ ServerEvents.recipes(e => {
           I: 'botania:gaia_ingot'
         }
       ).id("plentyofarmors:stardusite_ingot")
-    
-      e.shaped(
-        Item.of('umbrellas:umbrella', 1), 
-        [
-          'BBB',
-          'BAB',
-          ' A '
-        ],
-        {
-          A: 'betterend:leather_wrapped_stick',
-          B: 'phantom_armor:phantom_leather'
-        }
-      ).id("umbrellas:umbrella")
-    
-      e.shaped(
-        Item.of('umbrellas:light_blue_umbrella', 1), 
-        [
-          'BBB',
-          'BAB',
-          ' A '
-        ],
-        {
-          A: 'minecraft:stick',
-          B: 'botania:manaweave_cloth'
-        }
-      ).id("umbrellas:umbrella_2")
     
       e.shaped(
         Item.of('potionvapes:vape', 1), 
@@ -1088,7 +990,7 @@ ServerEvents.recipes(e => {
       })
     })
     e.shapeless('plentyofarmors:stardusite_helmet', ['plentyofarmors:stardusite_ingot', 'minecraft:nether_star', 'bosses_of_mass_destruction:ancient_anima', 'mutantmonsters:mutant_skeleton_skull', 'plentyofarmors:amethyst_gem', 'minecraft:echo_shard', '#regions_unexplored:prismarite_crystals', 'betterend:eternal_crystal', 'fantasy_armor:moon_crystal']).id('plentyofarmors:stardusite_helmet')
-    e.shapeless('plentyofarmors:stardusite_chestplate', ['plentyofarmors:stardusite_ingot', 'silentsdelight:warden_heart', 'bosses_of_mass_destruction:blazing_eye', 'mutantmonsters:endersoul_hand',  'plentyofarmors:amethyst_gem', 'minecraft:echo_shard', '#regions_unexplored:prismarite_crystals', 'betterend:eternal_crystal', 'fantasy_armor:moon_crystal']).id('plentyofarmors:stardusite_chestplate')
+    e.shapeless('plentyofarmors:stardusite_chestplate', ['plentyofarmors:stardusite_ingot', 'endportalcraft:warden_core', 'bosses_of_mass_destruction:blazing_eye', 'mutantmonsters:endersoul_hand',  'plentyofarmors:amethyst_gem', 'minecraft:echo_shard', '#regions_unexplored:prismarite_crystals', 'betterend:eternal_crystal', 'fantasy_armor:moon_crystal']).id('plentyofarmors:stardusite_chestplate')
     e.shapeless('plentyofarmors:stardusite_leggings', ['plentyofarmors:stardusite_ingot', 'more_armor_trims:ram_armor_trim_smithing_template', 'bosses_of_mass_destruction:obsidian_heart', 'mutantmonsters:hulk_hammer',  'plentyofarmors:amethyst_gem', 'minecraft:echo_shard', '#regions_unexplored:prismarite_crystals', 'betterend:eternal_crystal', 'fantasy_armor:moon_crystal']).id('plentyofarmors:stardusite_leggings')
     e.shapeless('plentyofarmors:stardusite_boots', ['plentyofarmors:stardusite_ingot', 'minecraft:tide_armor_trim_smithing_template', 'bosses_of_mass_destruction:void_thorn', 'mutantmonsters:creeper_shard',  'plentyofarmors:amethyst_gem', 'minecraft:echo_shard', '#regions_unexplored:prismarite_crystals', 'betterend:eternal_crystal', 'fantasy_armor:moon_crystal']).id('plentyofarmors:stardusite_boots')
     // blasting
@@ -1096,21 +998,12 @@ ServerEvents.recipes(e => {
     e.blasting('minecraft:stone', 'minecraft:cobblestone').xp(0.1).id('mosmods2:blasting/stone')
     // smithing
     armorTypes.forEach((piece) => {
-      e.smithing(`minecraft:netherite_${piece}`, 'minecraft:black_dye', `minecraft:diamond_${piece}`, 'minecraft:netherite_ingot').id(`minecraft:netherite_${piece}_smithing`)
       fantasyArmorLink.forEach((link) => {
         e.smithing(`fantasy_armor:${link[0]}_${piece}`, 'fantasy_armor:moon_crystal', `minecraft:netherite_${piece}`, link[1]).id(`fantasy_armor:${link[0]}_${piece}`)
       })
       e.smithing(`plentyofarmors:ender_netherite_${piece}`, 'minecraft:netherite_upgrade_smithing_template', `minecraft:netherite_${piece}`, `plentyofarmors:heart_of_the_end`).id(`plentyofarmors:ender_netherite_${piece}`)
       e.smithing(`plentyofarmors:marine_diamond_${piece}`, 'minecraft:netherite_upgrade_smithing_template', `minecraft:netherite_${piece}`, `plentyofarmors:marine_diamond`).id(`plentyofarmors:marine_diamond_${piece}`)
       e.smithing(`plentyofarmors:stardusite_${piece}`, '#letsdo:completionist_banner', `#enrichment:end_game_${piece}`, `plentyofarmors:stardusite_${piece}`).id(`enrichment:endgame_to_stardusite_${piece}_upgrade`)
-    })
-    toolTypes.forEach((tool) => { 
-      if (tool != "hoe") {
-        e.smithing(`minecraft:netherite_${tool}`, 'minecraft:black_dye', `minecraft:diamond_${tool}`, 'minecraft:netherite_ingot').id(`minecraft:netherite_${tool}_smithing`)
-      }
-    })
-    basicWeapons.forEach((tool) => { 
-      e.smithing(`basicweapons:netherite_${tool}`, 'minecraft:black_dye', `basicweapons:diamond_${tool}`, 'minecraft:netherite_ingot').id(`basicweapons:netherite_${tool}_smithing`)
     })
     e.smithing('botania:terra_pick', 'botania:obedience_stick', '#enrichment:end_game_pick', 'botania:terrasteel_ingot').id('botania:terra_pick')
     e.smithing('botania:terra_axe', 'botania:obedience_stick', '#enrichment:end_game_axe', 'botania:terrasteel_ingot').id('botania:terra_axe')

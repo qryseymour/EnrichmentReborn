@@ -66,6 +66,9 @@ mode = "fancy"
 				body_part = true
 				mutant_arrow = true
 
+			[light_sources.settings.entities.netherexp]
+				soul_bullet = true
+
 			[light_sources.settings.entities.diabolicaldelights]
 				jack_o_bomb = true
 
@@ -83,6 +86,7 @@ mode = "fancy"
 				spectre = true
 				berserker = true
 				pink_salt_pillar = true
+				silver_bomb = true
 				specterpillar = true
 
 			[light_sources.settings.entities.furnish]
@@ -232,6 +236,9 @@ mode = "fancy"
 			[light_sources.settings.entities.bloomingnature]
 				wandering_gardener = true
 
+			[light_sources.settings.entities.amethyst_imbuement]
+				energy_blade_entity = true
+
 			[light_sources.settings.entities.minecraft]
 				zombie_horse = true
 				axolotl = true
@@ -337,12 +344,25 @@ mode = "fancy"
 				painting = true
 				wither = true
 
+			[light_sources.settings.entities.endermanoverhaul]
+				bubble_pearl = true
+				savanna_enderman = true
+				cave_enderman = true
+				corrupted_pearl = true
+
 			[light_sources.settings.entities.regions_unexplored]
 				boat = true
 
 			[light_sources.settings.entities.snowyspirit]
 				gingerbread_golem = true
 				sled = true
+
+			[light_sources.settings.entities.additionalfishing]
+				bass = true
+				goldfish = true
+				shrimp = true
+				koi = true
+				piranha = true
 
 			[light_sources.settings.entities.botania]
 				mana_burst = true
@@ -367,6 +387,13 @@ mode = "fancy"
 
 			[light_sources.settings.entities.simplehats]
 				hatdisplay = true
+
+			[light_sources.settings.entities.crittersandcompanions]
+				dragonfly = true
+				koi_fish = true
+				dumbo_octopus = true
+				otter = true
+				sea_bunny = true
 
 			[light_sources.settings.entities.xercapaint]
 				easel = true
@@ -398,6 +425,11 @@ mode = "fancy"
 				bullet = true
 				penguin = true
 				flamingo = true
+
+			[light_sources.settings.entities.creeperoverhaul]
+				ocean_creeper = true
+				dripstone_creeper = true
+				cave_creeper = true
 
 			[light_sources.settings.entities.snowballs_plus]
 				bloodthirsty_snowball = true
