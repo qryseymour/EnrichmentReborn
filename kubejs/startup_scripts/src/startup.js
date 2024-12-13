@@ -54,23 +54,19 @@ ItemEvents.modification(event => {
         item.maxStackSize = 4;
     })
 
-    // x2 durability
-    event.modify(/(.*diamond.*|armoroftheages:(quetzalcoatl_armor_(head|chest|legs)|raijin_armor_(head|feet)|anubis.*|holy_armor_(head|feet)|o_yoroi.*|iron_plate_armor_(chest|legs)))/, item => {
-        item.setMaxDamage(item.maxDamage * 2)
-    })
 
-    // x4 durability
-    event.modify(/(armoroftheages:(centurion.*|quetzalcoatl_armor_feet|raijin_armor_(chest|legs)|anubis_armor_chest))/, item => {
-        item.setMaxDamage(item.maxDamage * 4)
-    })
+    // multiply durability by given modifier number
+    // item can either be a string or a regex
+    let modifyDurability = [
+        { modifier: 2, item: /.*diamond.*/ },
+        { modifier: 2, item: /armoroftheages:(quetzalcoatl_armor_(head|chest|legs)|raijin_armor_(head|feet)|anubis.*|holy_armor_(head|feet)|o_yoroi.*|iron_plate_armor_(chest|legs))/ },
+        { modifier: 4, item: /armoroftheages:(centurion.*|quetzalcoatl_armor_feet|raijin_armor_(chest|legs)|anubis_armor_chest)/ },
+        { modifier: 8, item: /armoroftheages:(holy_armor_(chest|legs))/ },
+        { modifier: 8, item: /mythicupgrades:.*/ },
+        { modifier: 45, item: /(.*netherite.*|fantasy_armor:.*|stardusite.*)/ },
+    ]
 
-    // x8 durability
-    event.modify(/(armoroftheages:(holy_armor_(chest|legs))|mythicupgrades:.*)/, item => {
-        item.setMaxDamage(item.maxDamage * 8)
-    })
-
-    // x45 durability
-    event.modify(/(.*netherite.*|fantasy_armor:.*|stardusite.*))/, item => {
-        item.setMaxDamage(item.maxDamage * 45)
-    })
+    modifyDurability.forEach(ele => event.modify(ele.item, item => {
+        item.setMaxDamage(item.maxDamage * ele.modifier)
+    }))
 })
