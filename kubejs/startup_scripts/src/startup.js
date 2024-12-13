@@ -53,4 +53,24 @@ ItemEvents.modification(event => {
     event.modify('botania:flare_chakram', item => {
         item.maxStackSize = 4;
     })
+
+    // x2 durability
+    event.modify(/(.*diamond.*|armoroftheages:(quetzalcoatl_armor_(head|chest|legs)|raijin_armor_(head|feet)|anubis.*|holy_armor_(head|feet)|o_yoroi.*|iron_plate_armor_(chest|legs)))/, item => {
+        item.setMaxDamage(item.maxDamage * 2)
+    })
+
+    // x4 durability
+    event.modify(/(armoroftheages:(centurion.*|quetzalcoatl_armor_feet|raijin_armor_(chest|legs)|anubis_armor_chest))/, item => {
+        item.setMaxDamage(item.maxDamage * 4)
+    })
+
+    // x8 durability
+    event.modify(/(armoroftheages:(holy_armor_(chest|legs))|mythicupgrades:.*)/, item => {
+        item.setMaxDamage(item.maxDamage * 8)
+    })
+
+    // x45 durability
+    event.modify(/(.*netherite.*|fantasy_armor:.*|stardusite.*))/, item => {
+        item.setMaxDamage(item.maxDamage * 45)
+    })
 })
